@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="1127.4" MadCap:lastWidth="863">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title></title>
+    </head>
+    <body>
+        <div class="topic-hero">
+            <div class="top-bar">
+                <p class="help-title"><MadCap:variable name="General.ProductName" /> Help</p>
+            </div>
+            <div class="home-layout">
+                <div class="home-content-container">
+                    <div>
+                        <MadCap:bodyProxy />
+                    </div>
+                    <div class="footer center">
+                        <div class="home-master-page-footer">
+                            <div>
+                                <table style="width: 100%;">
+                                    <col />
+                                    <col />
+                                    <col />
+                                    <col />
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="[%=General.Facebook%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/FB-gray.png" /></a>
+                                            </td>
+                                            <td>
+                                                <p><a href="[%=General.Twitter%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/Twitter-gray.png" /></a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p><a href="[%=General.Instagram%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/Insta-gray.png" /></a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p><a href="[%=General.LinkedIn%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/LI-gray.png" /></a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
