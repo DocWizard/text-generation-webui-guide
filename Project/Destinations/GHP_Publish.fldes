@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my publish destination"
+  Host="ftp.myftpserver.com"
+  User="MyAccountId"
+  Password=""
+  Directory="F:\Studia\MadCap\text-generation-webui-guide\text-generation-webui-guide\Docs"
+  Port=""
+  ViewUrl="http://www.madcapsoftware.com/"
+  Type="scm"
+  ProviderType="Git"
+  Database="file:///F:/Studia/MadCap/text-generation-webui-guide/text-generation-webui-guide/.git/"
+  DatabaseRoot="file:///F:/Studia/MadCap/text-generation-webui-guide/text-generation-webui-guide/Docs"
+  PushToRemote="true"></CatapultDestination>

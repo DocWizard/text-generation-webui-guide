@@ -14,11 +14,17 @@
   ConditionTagExpression="include[&quot;General.Audience A&quot;] exclude[&quot;General.Audience B&quot;] "
   DefaultUrl="/Content/Home.htm"
   MasterStylesheet="/Content/Resources/Stylesheets/MainStyles.css"
-  MasterStylesheetOverride="true">
+  MasterStylesheetOverride="true"
+  OutputFile="index.html">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
     GenerateIndexProxy="true"
     GenerateGlossaryProxy="true" />
-  <Destinations> </Destinations>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/GHP_Publish.fldes"
+      Publish="true"
+      IsResource="false" />
+  </Destinations>
 </CatapultTarget>
