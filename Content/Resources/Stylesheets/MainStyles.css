@@ -1,4 +1,4 @@
-﻿/*<meta />*/
+/*<meta />*/
 
 /*===========================================================================================================================================================
 
@@ -303,8 +303,9 @@ div.home-master-page-footer	/*This layout was created using the Responsive Layou
 {
 	mc-grid-row: true;
 	margin-left: auto;
-	margin-right: auto;
-	width: 55%;
+	width: 50%;
+	margin-right: 1em;
+	text-align: right;
 }
 
 div.home-master-page-footer::before
@@ -399,48 +400,56 @@ legend
 		page-break-after: avoid;
 		page-break-before: avoid;
 	}
+
 	p.caution
 	{
-		display:flex;
+		display: flex;
 	}
+
 	p.tip
 	{
-		display:flex;
+		display: flex;
 	}
 }
 
 p.caution
 {
-	padding-left: 1em;
-	margin-bottom: 8px;
-	margin-top: 8px;
 	border-left: solid 2px #ff0000;
 	border-left-width: 3px;
-	padding-top: 4px;
-	padding-left: 1em;
 	background-color: papayawhip;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	padding: 6px, 1em;
 }
 
-p.caution::before 
+p.caution::before
 {
 	content: url('../Images/Assets/Icons/exclamation-mark.png');
 	margin: 4px 0.5em 0px 0px;
 	float: left;
 }
 
+p.footer-text
+{
+	color: #a9a9a9;
+}
+
+div.home-text
+{
+	margin: 1em 3em;
+}
+
 /*<meta sourceDocument="F:\Studia\MadCap\text-generation-webui-guide\Import\download_setup.md" />*/
 
 p.tip
 {
-	margin-bottom: 8px;
-	margin-top: 8px;
 	border-left: solid 2px #00ff00;
-	padding-left: 1em;
-	padding-top: 4px;
 	border-left-width: 3px;
 	background-color: azure;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	padding: 6px, 1em;
 }
-
 
 p.tip::before
 {
@@ -448,3 +457,4 @@ p.tip::before
 	margin: 4px 0.5em 0px 0px;
 	float: left;
 }
+

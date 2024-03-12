@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="1127.4" MadCap:lastWidth="863">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
         <meta charset="utf-8" />
         <meta name="description" content="" />
         <meta name="author" content="" /><title></title>
+        <script src="../JS/link-events.js">
+        </script>
     </head>
     <body>
         <div class="topic-hero">
             <div class="top-bar">
-                <p class="help-title"><MadCap:variable name="General.ProductName" /> Help</p>
+                <p class="help-title">text-generation-webui unofficial Quick Start Guide</p>
             </div>
             <div class="home-layout">
                 <div class="home-content-container">
@@ -22,21 +24,13 @@
                                     <col />
                                     <col />
                                     <col />
-                                    <col />
                                     <tbody>
                                         <tr>
-                                            <td><a href="[%=General.Facebook%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/FB-gray.png" /></a>
+                                            <td><p class="footer-text">By DocWizard @ GitHub. Contact me:</p></td>
+                                            <td><a href="https://github.com/DocWizard" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/github-mark.png" /></a>
                                             </td>
                                             <td>
-                                                <p><a href="[%=General.Twitter%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/Twitter-gray.png" /></a>
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p><a href="[%=General.Instagram%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/Insta-gray.png" /></a>
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p><a href="[%=General.LinkedIn%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/LI-gray.png" /></a>
+                                                <p><a class="email" href="mailto:docwizard"><img src="../Images/Assets/Icons/MainIcons/Contact-black.png" /></a>
                                                 </p>
                                             </td>
                                         </tr>
