@@ -1,53 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultToc
   Version="1">
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/A_Introduction Topics/Getting Started.htm">
+    Link="/Content/A_LLM_Basics/LLM_Basics.htm">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/A_Introduction Topics/Basic Steps.htm" />
+      Link="/Content/A_LLM_Basics/What_is_an_LLM.htm" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/A_Introduction Topics/Whats New.htm" />
+      Link="/Content/A_LLM_Basics/Pros_And_Cons.htm" />
   </TocEntry>
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/B_Feature Topics/Features.htm">
+    Link="/Content/B_Getting_Started/Getting_Started.htm">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/B_Feature Topics/Feature1.htm" />
+      Link="/Content/B_Getting_Started/System_requirements.htm" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/B_Feature Topics/Feature2.htm" />
+      Link="/Content/B_Getting_Started/Download_and_setup.htm" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/B_Feature Topics/Feature3.htm" />
+      Link="/Content/B_Getting_Started/UI_and_basic_functionality.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/B_Getting_Started/Alternative_software.htm" />
   </TocEntry>
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/C_Procedure Topics/Procedures.htm">
+    Link="/Content/C_Selecting_a_Model/Selecting_a_model.htm">
+    <TocEntry
+      Title="Model size vs hardware capabilities"
+      Link="/Content/C_Selecting_a_Model/Model_size.htm" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/C_Procedure Topics/Procedure1.htm" />
-    <TocEntry
-      Title="[%=System.LinkedTitle%]"
-      Link="/Content/C_Procedure Topics/Procedure2.htm" />
-    <TocEntry
-      Title="[%=System.LinkedTitle%]"
-      Link="/Content/C_Procedure Topics/Procedure3.htm" />
+      Link="/Content/C_Selecting_a_Model/Browsing_HF.htm" />
   </TocEntry>
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/D_More Information/Company Information.htm">
+    Link="/Content/D_Model_configuration/Model_configuration.htm">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/D_More Information/FAQs.htm" />
+      Link="/Content/D_Model_configuration/Loading_model.htm"></TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/D_More Information/PDF Downloads.htm" />
+      Link="/Content/D_Model_configuration/Instruction_template.htm" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/D_More Information/Tips.htm" />
+      Link="/Content/D_Model_configuration/Generation_parameters.htm" />
   </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/E_Chatting/Chatting.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/E_Chatting/Basic_chats.htm"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/E_Chatting/Characters.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/E_Chatting/API.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/F_Further_reading/Further_Reading.htm"></TocEntry>
 </CatapultToc>
