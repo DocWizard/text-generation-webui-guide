@@ -15,7 +15,12 @@
   DefaultUrl="/Content/Home.htm"
   MasterStylesheet="/Content/Resources/Stylesheets/MainStyles.css"
   MasterStylesheetOverride="true"
-  OutputFile="index.html">
+  OutputFile="index.html"
+  SearchBarSkin="/Project/Skins/SearchHome.flskn"
+  TopicToolbarSkin="/Project/Skins/TopicToolBar.flskn"
+  MenuSkin="/Project/Skins/SideMenu.flskn"
+  MasterToc="/Project/TOCs/Master.fltoc"
+  Medium="WebOutput">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
@@ -27,4 +32,16 @@
       Publish="true"
       IsResource="false" />
   </Destinations>
+  <MicroContentSearch>
+    <FeaturedSnippets
+      type="AllFiles"
+      numberOfResults="1">
+      <microContentSubset />
+    </FeaturedSnippets>
+    <KnowledgePanel
+      type="Empty"
+      numberOfResults="1">
+      <microContentSubset />
+    </KnowledgePanel>
+  </MicroContentSearch>
 </CatapultTarget>

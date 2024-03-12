@@ -1,4 +1,4 @@
-/*<meta />*/
+﻿/*<meta />*/
 
 /*===========================================================================================================================================================
 
@@ -332,6 +332,11 @@ div.home-master-page-footer > div:nth-child(1)
 	width: 100%;
 }
 
+legend
+{
+	
+}
+
 @media tablet
 {
 	div.home-layout > div:nth-child(1)
@@ -373,3 +378,73 @@ div.home-master-page-footer > div:nth-child(1)
 	}
 }
 
+@media WebOutput
+{
+	.codeSnippet
+	{
+		display: flex;
+		justify-content: space-between;
+		padding: 1em;
+		border: solid 1px #DDD;
+		font-size: 9pt;
+		background-color: aliceblue;
+	}
+
+	.codeSnippetCopyButton
+	{
+		order: 1;
+		padding-right: 1.5em;
+		cursor: pointer;
+		border: none;
+		page-break-after: avoid;
+		page-break-before: avoid;
+	}
+	p.caution
+	{
+		display:flex;
+	}
+	p.tip
+	{
+		display:flex;
+	}
+}
+
+p.caution
+{
+	padding-left: 1em;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	border-left: solid 2px #ff0000;
+	border-left-width: 3px;
+	padding-top: 4px;
+	padding-left: 1em;
+	background-color: papayawhip;
+}
+
+p.caution::before 
+{
+	content: url('../Images/Assets/Icons/exclamation-mark.png');
+	margin: 4px 0.5em 0px 0px;
+	float: left;
+}
+
+/*<meta sourceDocument="F:\Studia\MadCap\text-generation-webui-guide\Import\download_setup.md" />*/
+
+p.tip
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	border-left: solid 2px #00ff00;
+	padding-left: 1em;
+	padding-top: 4px;
+	border-left-width: 3px;
+	background-color: azure;
+}
+
+
+p.tip::before
+{
+	content: url('../Images/Assets/Icons/light-bulb.png');
+	margin: 4px 0.5em 0px 0px;
+	float: left;
+}

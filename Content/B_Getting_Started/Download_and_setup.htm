@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 id="download-and-first-time-setup">Download and first-time setup</h1>
+        <p>Downloading text-generation-webui is best accomplished by cloning the repository. You will need to download and install <a href="https://desktop.github.com/">GitHub Desktop</a> on your system. The process is straightforward and should only take a minute.</p>
+        <p class="tip">Tip!<br />If you are already familiar with Git, you may use it instead to clone the repository by yourself.</p>
+        <p>Once you have <a href="https://desktop.github.com/">GitHub Desktop</a> installed on your system, go ahead and launch it.</p>
+        <p>Navigate to <b>File</b> &gt; <b>Clone repository</b>. In the 'repository URL' field, paste the following URL:</p>
+        <MadCap:codeSnippet>
+            <codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">https://github.com/oobabooga/text-generation-webui</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>Next, in the field below, select the path you wish to use for your local installation of text-generation-webui.</p>
+        <p>Finally, press <b>Clone</b>. After the operation is finished you may close GitHub Desktop.</p>
+        <h2 id="initial-setup">Initial setup</h2>
+        <p>Installing text-generation-webui is straightforward. Use your file explorer to navigate to the text-generation-webui instalation folder you previously selected.</p>
+        <p>Now, find and double-click on a file named start_windows.bat (or, if you're using linux or macOS, start_linux.sh or start_macos.sh, respectively). You will use the same file in the future to update and launch the program.</p>
+        <p class="caution">Caution!<br />This script will automatically download approximately 3GB of data to your computer. Be aware of this especially if you're on a metered connection.</p>
+        <p>A terminal window will launch, downloading some required dependencies. At some point, you will be asked to select your GPU vendor. Choose the desired option, then confirm with ENTER.</p>
+        <p>TODO: Link to: How to determine your GPU vendor.</p>
+        <p>Next, follow the on-screen prompts. Be patient, as the script may take some time to complete. Do not worry if the installation seems to be stuck.</p>
+        <p>The installation process is complete once you see "Running on local URL:..." in your terminal window.</p>
+        <p>At this point, do not close the terminal window. Instead, take note of the local URL displayed. Using your web browser of choice, navigate to the URL given. You should see the main interface. Congratulations, you have successfully completed the installation process!</p>
+    </body>
+</html>
