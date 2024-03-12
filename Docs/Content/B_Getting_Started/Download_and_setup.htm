@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="WebOutput">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -220,8 +220,26 @@
                                                             </div>
                                                         </div>
                                                         <div role="main" id="mc-main-content">
-                                                            <h1>Download and first-time setup</h1>
-                                                            <p>Delete this text and replace it with your own content.</p>
+                                                            <h1 id="download-and-first-time-setup">Download and first-time setup</h1>
+                                                            <p>Downloading text-generation-webui is best accomplished by cloning the repository. You will need to download and install <a href="https://desktop.github.com/">GitHub Desktop</a> on your system. The process is straightforward and should only take a minute.</p>
+                                                            <p class="tip">Tip!<br />If you are already familiar with Git, you may use it instead to clone the repository by yourself.</p>
+                                                            <p>Once you have <a href="https://desktop.github.com/">GitHub Desktop</a> installed on your system, go ahead and launch it.</p>
+                                                            <p>Navigate to <b>File</b> &gt; <b>Clone repository</b>. In the 'repository URL' field, paste the following URL:</p>
+                                                            <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                                <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>https://github.com/oobabooga/text-generation-webui</code></pre>
+                                                                </div>
+                                                            </div>
+                                                            <p>Next, in the field below, select the path you wish to use for your local installation of text-generation-webui.</p>
+                                                            <p>Finally, press <b>Clone</b>. After the operation is finished you may close GitHub Desktop.</p>
+                                                            <h2 id="initial-setup">Initial setup</h2>
+                                                            <p>Installing text-generation-webui is straightforward. Use your file explorer to navigate to the text-generation-webui instalation folder you previously selected.</p>
+                                                            <p>Now, find and double-click on a file named start_windows.bat (or, if you're using linux or macOS, start_linux.sh or start_macos.sh, respectively). You will use the same file in the future to update and launch the program.</p>
+                                                            <p class="caution">Caution!<br />This script will automatically download approximately 3GB of data to your computer. Be aware of this especially if you're on a metered connection.</p>
+                                                            <p>A terminal window will launch, downloading some required dependencies. At some point, you will be asked to select your GPU vendor. Choose the desired option, then confirm with ENTER.</p>
+                                                            <p>TODO: Link to: How to determine your GPU vendor.</p>
+                                                            <p>Next, follow the on-screen prompts. Be patient, as the script may take some time to complete. Do not worry if the installation seems to be stuck.</p>
+                                                            <p>The installation process is complete once you see "Running on local URL:..." in your terminal window.</p>
+                                                            <p>At this point, do not close the terminal window. Instead, take note of the local URL displayed. Using your web browser of choice, navigate to the URL given. You should see the main interface. Congratulations, you have successfully completed the installation process!</p>
                                                         </div>
                                                     </div>
                                                 </div>
