@@ -342,6 +342,11 @@ legend
 	
 }
 
+MadCap|codeSnippetCopyButton
+{
+	
+}
+
 p.tip
 {
 	display: flex;
@@ -483,7 +488,7 @@ div.tip
 {
 	border-left: solid 2px #00ff00;
 	border-left-width: 3px;
-	background-color: azure;
+	background-color: #e0ffcf;
 	margin-bottom: 16px;
 	margin-top: 16px;
 	padding: 6px 1em;
@@ -513,5 +518,14 @@ div.next::before
 {
 	content: url('../Images/Assets/Icons/Arrows/arrow-right-black.png');
 	padding: 0 1em 0 0;
+}
+
+MadCap|codeSnippetCopyButton
+{
+	background-image: url('../Images/Assets/Icons/copy.png');
+	background-repeat: no-repeat;
+	mc-label: ' ';
+	height: 25px;
+	width: 25px;
 }
 

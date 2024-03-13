@@ -498,6 +498,10 @@
 
 .micro-response-1312151726 .codeSnippetCopyButton
 {
+	background-image: url('../../../Content/Resources/Images/Assets/Icons/copy.png');
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 25px;
 	float: right;
 	padding-right: 1.5em;
 	cursor: pointer;
