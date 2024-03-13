@@ -442,38 +442,6 @@
 	margin-bottom: 10px;
 }
 
-.micro-response-1312151726 .codeSnippetBody
-{
-	font-family: Consolas, Monaco, 'Courier New', monospace;
-	padding: 1em 0 1em 0;
-	line-height: 1em;
-	tab-size: 4;
-	-moz-tab-size: 4;
-	clear: both;
-}
-
-.micro-response-1312151726 .codeSnippetCopyButton
-{
-	float: right;
-	padding-right: 1.5em;
-	cursor: pointer;
-	border: none;
-	page-break-after: avoid;
-	page-break-before: avoid;
-}
-
-.micro-response-1312151726 .codeSnippetCopyButton:hover
-{
-	color: #888;
-}
-
-.micro-response-1312151726 .codeSnippet
-{
-	padding: 1em;
-	border: solid 1px #DDD;
-	font-size: 9pt;
-}
-
 .micro-response-1312151726 .dropDown
 {
 	border-bottom: solid 2px #f5f5f5;
@@ -516,6 +484,38 @@
 .micro-response-1312151726 .dropDownHead
 {
 	text-decoration: none;
+}
+
+.micro-response-1312151726 .codeSnippetBody
+{
+	font-family: Consolas, Monaco, 'Courier New', monospace;
+	padding: 1em 0 1em 0;
+	line-height: 1em;
+	tab-size: 4;
+	-moz-tab-size: 4;
+	clear: both;
+}
+
+.micro-response-1312151726 .codeSnippetCopyButton
+{
+	float: right;
+	padding-right: 1.5em;
+	cursor: pointer;
+	border: none;
+	page-break-after: avoid;
+	page-break-before: avoid;
+}
+
+.micro-response-1312151726 .codeSnippetCopyButton:hover
+{
+	color: #888;
+}
+
+.micro-response-1312151726 .codeSnippet
+{
+	padding: 1em;
+	border: solid 1px #DDD;
+	font-size: 9pt;
 }
 
 .micro-response-1312151726 .MCWebHelpFramesetLink a
