@@ -101,6 +101,8 @@ img	/*Setting max-width: 100%; property makes images always fit the width of the
 img.thumbnail
 {
 	mc-thumbnail: popup;
+	mc-thumbnail-max-height: auto;
+	margin: 1em 0;
 }
 
 a.MCBreadcrumbsLink
@@ -444,21 +446,27 @@ p.caution
 	}
 }
 
-p.caution
+div.caution
 {
 	border-left: solid 2px #ff0000;
 	border-left-width: 3px;
 	background-color: papayawhip;
-	margin-bottom: 8px;
-	margin-top: 8px;
-	padding: 6px, 1em;
+	margin-bottom: 16px;
+	margin-top: 16px;
+	padding: 6px 1em;
 }
 
-p.caution::before
+div.caution::before
 {
 	content: url('../Images/Assets/Icons/exclamation-mark.png');
-	margin: 4px 0.5em 0px 0px;
+	margin: 10px 0.5em 0px 0px;
 	float: left;
+}
+
+div.caution p:first-of-type
+{
+	font-weight: bold;
+	padding-left: 1em;
 }
 
 p.footer-text
@@ -471,22 +479,39 @@ div.home-text
 	margin: 1em 3em;
 }
 
-/*<meta sourceDocument="F:\Studia\MadCap\text-generation-webui-guide\Import\download_setup.md" />*/
-
-p.tip
+div.tip
 {
 	border-left: solid 2px #00ff00;
 	border-left-width: 3px;
 	background-color: azure;
-	margin-bottom: 8px;
-	margin-top: 8px;
-	padding: 6px, 1em;
+	margin-bottom: 16px;
+	margin-top: 16px;
+	padding: 6px 1em;
 }
 
-p.tip::before
+div.tip::before
 {
 	content: url('../Images/Assets/Icons/light-bulb.png');
-	margin: 4px 0.5em 0px 0px;
+	margin: 10px 0.5em 0px 0px;
 	float: left;
+}
+
+div.tip p:first-of-type
+{
+	font-weight: bold;
+	padding-left: 1em;
+}
+
+div.next
+{
+	background-color: aliceblue;
+	padding: 8px;
+	margin: 1em 0;
+}
+
+div.next::before
+{
+	content: url('../Images/Assets/Icons/Arrows/arrow-right-black.png');
+	padding: 0 1em 0 0;
 }
 
