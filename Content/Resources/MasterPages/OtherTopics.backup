@@ -8,7 +8,7 @@
     <body>
         <div class="topic-hero">
             <div class="top-bar">
-                <p class="help-title"><MadCap:variable name="General.ProductName" /> Help</p>
+                <p class="help-title"><MadCap:variable name="General.ProductName" /></p>
             </div>
             <div class="topic-layout">
                 <div>
@@ -17,6 +17,7 @@
                 </div>
                 <div>
                     <div class="content-container">
+                        <MadCap:topicToolbarProxy style="mc-topic-toolbar-items: ;" data-mc-skin="/Project/Skins/TopicToolBar.flskn" />
                         <div>
                             <MadCap:breadcrumbsProxy />
                             <MadCap:bodyProxy />
