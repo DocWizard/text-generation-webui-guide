@@ -196,7 +196,7 @@ div.topic-hero	/*Provides the accent for the background along with the logo.*/
 {
 	background-color: #78b1a9;
 	height: 72vh;
-	background-image: url('../Images/Assets/PlaceholderLogo/PlaceholderIconGreen.png');
+	background-image: url('../Images/Assets/Logo/brain.png');
 	background-repeat: no-repeat;
 	background-position-x: 105%;
 	background-position-y: 110%;

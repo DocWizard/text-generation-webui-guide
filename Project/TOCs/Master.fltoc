@@ -23,9 +23,6 @@
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/B_Getting_Started/UI_and_basic_functionality.htm" />
-    <TocEntry
-      Title="[%=System.LinkedTitle%]"
-      Link="/Content/B_Getting_Started/Alternative_software.htm" />
   </TocEntry>
   <TocEntry
     Title="[%=System.LinkedTitle%]"
@@ -65,5 +62,9 @@
   </TocEntry>
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/F_Further_reading/Further_Reading.htm"></TocEntry>
+    Link="/Content/F_Further_reading/Further_Reading.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/F_Further_reading/Alternative_software.htm" />
+  </TocEntry>
 </CatapultToc>
