@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to determine your GPU vendor</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you're not sure what your GPU&#160;vendor is, follow these steps:</p>
+                <ul>
+                    <li style="font-weight: normal;">Open the<b>Start menu</b></li>
+                    <li style="font-weight: normal;">Search for <b>Task Manager</b> and launch it</li>
+                    <li style="font-weight: normal;">Navigate to <b>Performance</b>, then select your GPU - either <b>GPU0</b> or <b>GPU1</b></li>
+                    <li style="font-weight: normal;">Note the GPU&#160;name in the top right corner. It will most likely be either NVIDIA, AMD&#160;or Intel.</li>
+                </ul>
+                <p style="font-weight: normal;">
+                    <img src="IMG/GPU_identification.png" alt="Image of the GPU window in Task Manager" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>
