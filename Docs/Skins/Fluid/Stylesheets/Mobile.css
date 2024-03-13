@@ -11,10 +11,10 @@
 
 	.title-bar-layout a.logo
 	{
-		width: 229px;
+		width: 227px;
 		height: 55px;
-		background: transparent url('Images/PlaceholderLogo-gray.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/PlaceholderLogo-gray.png') no-repeat center center;
+		background: transparent url('Images/brain_small_1.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/brain_small_1.png') no-repeat center center;
 	}
 
 	.search-bar .search-submit
