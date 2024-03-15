@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Model formats</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/SysReqReminder.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/SkipAhead.flsnp" />
+        <div>
+            <p>Machine learning is a dynamic field, and there are many standards and quantization formats, both current and already obsolete. For the sake of this guide, we will consider two of them - EXL2 and GGUF.</p>
+        </div>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>GGUF&#160;- Click here if you wish to load a model in both RAM and VRAM, or RAM only</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p><b>GGUF</b>&#160;is a popular file format used by one of the most popular backend libraries, <a href="https://github.com/ggerganov/llama.cpp" target="_blank">llama.cpp</a>. Models quantized using this format are capable of being loaded in RAM. Part of the model can also be offloaded to VRAM for extra overall speed. Thanks to this, GGUF&#160;remains one of the most popular model formats in use today. Models quantized in this format are usually denoted with a -GGUF&#160;suffix on huggingface.co:</p>
+                <p>
+                    <img src="IMG/HF_GGUF_example.png" style="width: auto;height: auto;" alt="Image showing an example of a GGUF model" class="thumbnail" />
+                </p>
+                <p>You may also use the filter function limit the displayed models to only this format:</p>
+                <p>
+                    <img src="IMG/HF_GGUF_search.png" alt="Image showing the position of the filter bar on HuggingFace" style="width: auto;height: auto;" class="thumbnail" />
+                </p>
+                <p>Browse through the available models and try to find one that suits your needs, taking into account the amount of memory you will need to load the model. <i>TheBloke</i> and <i>bartowski</i> are two HuggingFace users who consistently upload GGUF&#160;quants of popular models.</p>
+                <div class="tip">
+                    <p>Tip:</p>
+                    <p>Remember, you can start with a small, 7B model and upgrade to a larger one if it turns out your computer can handle it. Refer to the memory requirements table provided by most GGUF quant uploaders.</p>
+                    <p>Keep in mind that quants below Q5 are generally not recommended. Try to pick a Q5_K_M quant to achieve the best size/quality ratio.</p>
+                </div>
+                <p>Once you've picked a model and the associated quant size, from the <b>model card</b> navigate to <b>Files and versions</b>, then simply click on the quant you wish to download. Once the download is finished, move the .gguf file to your text-generation-webui directory, dropping it in the <b>models</b> folder.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>EXL2 - Click here if you wish to load a model in VRAM only</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div>
+                    <p><b>EXL2 </b> is a quantization format oriented towards GPU&#160;inference, using the <a href="https://github.com/turboderp/exllama" target="_blank">Exllama</a> backend. It offers the fastest inference speed, at the cost of not being able to offload any part of the model to system memory. Models quantized in this format are usually denoted with a -exl2&#160;suffix on huggingface.co:</p>
+                    <p>
+                        <img src="IMG/HF_EXL2_example.png" alt="Image showing an example of an exl2 quant" style="width: auto;height: auto;" class="thumbnail" />
+                    </p>
+                    <p>You may also use the filter function limit the displayed models to only this format:</p>
+                    <p>
+                        <img src="IMG/HF_EXL2_search.png" alt="image showing an example EXL2 search on HuggingFace" style="width: auto;height: auto;" class="thumbnail" />
+                    </p>
+                    <p>Unlike GGUF, where a single model card can hold many quant sizes at once, EXL2 quants are uploaded in separate model entries. You will notice a <b>BPW</b> (bits per weight) number in the model name. This number represents the quantization strength - the higher, the less quantized the model. Typically, 4bpw is considered to be the sweet spot between size and quality.</p>
+                    <div class="tip">
+                        <p>Rough reference:</p>
+                        <p>A 7B&#160;4BPW&#160;model with 8k context size and FP8 cache enabled will take up around 4.7GB&#160;of VRAM. At 3.5 BPW, this number drops to 4.2GB. </p>
+                        <p>A&#160;13B&#160;4BPW model with 8k context size will take around 10.5GB&#160;VRAM. At 3.5BPW, with FP8 cache enabled, this drops to 9.6GB VRAM. </p>
+                        <p>Remember to leave extra memory available for your operating system!</p>
+                    </div>
+                </div>
+                <div>
+                    <p>To download an EXL2 model, you need to open text-generation-webui and navigate to the <b>models</b>tab.&#160;On the right side you will notice the <b>download</b> section. Find your desired model card and copy its  URL into the empty field below like so:</p>
+                    <p>
+                        <img src="IMG/webui_download_box.png" alt="Image of the download box in text-generation-webui" style="width: auto;height: auto;" class="thumbnail" />
+                    </p>
+                    <p>Then, confirm with <b>'Download'</b>.&#160;The model will be automatically downloaded. You can monitor the progress in the terminal window:</p>
+                    <p>
+                        <img src="IMG/webui_download.png" alt="Image of a download in progress in text-generation-webui" style="width: auto;height: auto;" class="thumbnail" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <div class="next">Once you've selected and downloaded a model, proceed to <a href="../D_Model_configuration/Model_configuration.htm">model loading and configuration</a></div>
+        <div class="next">If you still can't decide, try out one of the <a href="Recommended_first_models.htm">recommended models</a></div>
+    </body>
+</html>

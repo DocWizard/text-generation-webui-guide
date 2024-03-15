@@ -1,24 +1,24 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-<head>
-</head>
-<body>
-		<MadCap:dropDown>
-			<MadCap:dropDownHead>
-				<MadCap:dropDownHotspot>How to check how much system memory you have</MadCap:dropDownHotspot>
-			</MadCap:dropDownHead>
-			<MadCap:dropDownBody>
-				<p>If you're not sure how much RAM&#160;(system memory) you have available, follow these steps:</p>
-				<ul>
-					<li style="font-weight: normal;">Open the <b>Start menu</b></li>
-					<li style="font-weight: normal;">Search for <b>Task Manager</b> and launch it</li>
-					<li style="font-weight: normal;">Navigate to <b>Performance</b> &gt;&#160;<b>Memory</b></li>
-					<li style="font-weight: normal;">Note the number located in the top right corner. That's the amount of RAM&#160;you have available on your computer.</li>
-				</ul>
-				<p style="font-weight: normal;">
-					<img src="IMG/RAM_identification.png" alt="Image example showing where to find the available system memory" />
-				</p>
-			</MadCap:dropDownBody>
-		</MadCap:dropDown>
-</body>
+    <head>
+    </head>
+    <body>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to check how much system memory (RAM) you have</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you're not sure how much RAM&#160;you have available, follow these steps:</p>
+                <ul>
+                    <li style="font-weight: normal;">Open the <b>Start menu</b></li>
+                    <li style="font-weight: normal;">Search for <b>Task Manager</b> and launch it</li>
+                    <li style="font-weight: normal;">Navigate to <b>Performance</b> &gt;&#160;<b>Memory</b></li>
+                    <li style="font-weight: normal;">Note the number located in the top right corner. That's the amount of RAM&#160;you have available on your computer.</li>
+                </ul>
+                <p style="font-weight: normal;">
+                    <img src="IMG/RAM_identification.png" alt="Image example showing where to find the available system memory" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
 </html>

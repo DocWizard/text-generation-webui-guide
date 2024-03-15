@@ -28,11 +28,20 @@
     Title="[%=System.LinkedTitle%]"
     Link="/Content/C_Selecting_a_Model/Selecting_a_model.htm">
     <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/C_Selecting_a_Model/Browsing_HF.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
       Title="Model size vs hardware capabilities"
       Link="/Content/C_Selecting_a_Model/Model_size.htm" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
+      Link="/Content/C_Selecting_a_Model/Model_formats.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/C_Selecting_a_Model/Browsing_HF.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/C_Selecting_a_Model/Recommended_first_models.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
     Title="[%=System.LinkedTitle%]"
