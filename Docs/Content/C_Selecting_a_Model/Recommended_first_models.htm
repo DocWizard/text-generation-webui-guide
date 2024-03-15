@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta charset="utf-8" /><title>UI overview and Basic Functionality</title>
+        <meta charset="utf-8" /><title>Recommended first models</title>
         <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
@@ -128,18 +128,56 @@
                                                             </div>
                                                         </div>
                                                         <div role="main" id="mc-main-content">
-                                                            <h1>UI overview and Basic Functionality</h1>
-                                                            <p>When you first run text-generation-webui and open the URL&#160;provided in the terminal window, you will see the application's main interface.&#160;Here are its main elements:</p>
-                                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="IMG/ooba-main-screen.png" data-mc-popup-alt="Picture of text-generation-webui's main user interface"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1563" data-mc-height="840" src="IMG/ooba-main-screen_thumb_0_0.png" style="width: auto;height: auto;" alt="Picture of text-generation-webui's main user interface" tabindex="" /></a>
-                                                            </p>
-                                                            <ol>
-                                                                <li value="1"><b>Main toolbar</b>: contains various tabs - most importantly <b>Chat, <a href="../D_Model_configuration/Generation_parameters.htm">Parameters</a> </b>and<b> <a href="../D_Model_configuration/Loading_model.htm">Model</a></b></li>
-                                                                <li value="2"><b>Past chats</b>: allows you to create a new chat, as well as browse through past chats</li>
-                                                                <li value="3"><b>Mode selector</b>: defines the formatting of the chat prompt, depending on the used model</li>
-                                                                <li value="4"><b>Chat interface</b>: this is where your chat with the AI&#160;assistant will appear</li>
-                                                                <li value="5"><b>Input area</b>: contains the input field, as well as some extra options accessible via the hamburger menu</li>
-                                                            </ol>
-                                                            <div class="next">Proceed to <a href="../C_Selecting_a_Model/Selecting_a_model.htm">picking a Large Language Model.</a></div>
+                                                            <h1>Recommended first models</h1>
+                                                            <div>
+                                                                <p>This section contains pre-selected, simple models for those who wish to try text-generation-webui with minimal research. You will also find the required model parameters and instruction templates.</p>
+                                                                <div class="tip">
+                                                                    <p>Tip:</p>
+                                                                    <p>Refer to the <a href="../B_Getting_Started/System_requirements.htm">system requirements</a> section and decide on which method of loading the model you wish to use, if you haven't done so already.</p>
+                                                                </div>
+                                                                <p>For simplicity's sake, the models below will work with any combination of VRAM&#160;and RAM, or GPU&#160;memory and system memory.</p>
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How to check how much system memory (RAM) you have</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <p>If you're not sure how much RAM&#160;you have available, follow these steps:</p>
+                                                                        <ul>
+                                                                            <li style="font-weight: normal;">Open the <b>Start menu</b></li>
+                                                                            <li style="font-weight: normal;">Search for <b>Task Manager</b> and launch it</li>
+                                                                            <li style="font-weight: normal;">Navigate to <b>Performance</b> &gt;&#160;<b>Memory</b></li>
+                                                                            <li style="font-weight: normal;">Note the number located in the top right corner. That's the amount of RAM&#160;you have available on your computer.</li>
+                                                                        </ul>
+                                                                        <p style="font-weight: normal;">
+                                                                            <img src="../Resources/Snippets/IMG/RAM_identification.png" alt="Image example showing where to find the available system memory" />
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How to check how much VRAM you have</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <p>If you're not sure how much VRAM you have available, follow these steps:</p>
+                                                                        <ul>
+                                                                            <li style="font-weight: normal;">Open the <b>Start menu</b></li>
+                                                                            <li style="font-weight: normal;">Search for <b>Task Manager</b> and launch it</li>
+                                                                            <li style="font-weight: normal;">Navigate to <b>Performance</b>, then select your dedicated GPU - it will be either <b>GPU0</b> or <b>GPU1</b></li>
+                                                                            <li style="font-weight: normal;">Note the number located in the top right corner of the <b>Dedicated GPU&#160;memory usage</b> box. That number represents the amount of VRAM you have available. </li>
+                                                                        </ul>
+                                                                        <p style="font-weight: normal;">
+                                                                            <img src="../Resources/Snippets/IMG/GPU_identification.png" alt="Image of the GPU window in Task Manager" />
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <p><b>For computers with less than 16GB&#160;of RAM and no VRAM:</b>
+                                                                </p>
+                                                                <p>You might not be able to use any sensible models at all at a bearable speed, but try a Q4_K_M quant of <a href="https://huggingface.co/TheBloke/stablelm-zephyr-3b-GGUF/blob/main/stablelm-zephyr-3b.Q4_K_M.gguf" target="_blank">TheBloke/stablelm-zephyr-3b-GGUF</a></p>
+                                                                <p><b>For computers with 16GB&#160;or more of RAM, RAM+VRAM or VRAM:</b>
+                                                                </p>
+                                                                <p>Try a Q5_K_M quant of <a href="https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/blob/main/mistral-7b-instruct-v0.1.Q5_K_M.gguf" target="_blank">TheBloke/Mistral-7B-Instruct-v0.1-GGUF</a></p>
+                                                                <p><b>For computers with at least 32 GB&#160;of RAM, RAM+VRAM or VRAM:</b>
+                                                                </p>
+                                                                <p>Try a Q5_K_M quant of <a href="https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/blob/main/llama-2-13b-chat.Q5_K_M.gguf" target="_blank">TheBloke/Llama-2-13B-chat-GGUF.</a> Depending on your system, you might be able to run a more powerful model.</p>
+                                                                <p>Once you've picked a model and the associated quant size, from the <b>model card</b> navigate to <b>Files and versions</b>, then simply click on the quant you wish to download. Once the download is finished, move the .gguf file to your text-generation-webui directory, dropping it in the <b>models</b> folder.</p>
+                                                                <p>
+                                                                    <div class="next">When ready, proceed to <a href="../D_Model_configuration/Model_configuration.htm">model loading and configuration</a></div>
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>

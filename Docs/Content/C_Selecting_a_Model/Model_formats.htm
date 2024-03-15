@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta charset="utf-8" /><title>UI overview and Basic Functionality</title>
+        <meta charset="utf-8" /><title>Model formats</title>
         <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
@@ -128,18 +128,61 @@
                                                             </div>
                                                         </div>
                                                         <div role="main" id="mc-main-content">
-                                                            <h1>UI overview and Basic Functionality</h1>
-                                                            <p>When you first run text-generation-webui and open the URL&#160;provided in the terminal window, you will see the application's main interface.&#160;Here are its main elements:</p>
-                                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="IMG/ooba-main-screen.png" data-mc-popup-alt="Picture of text-generation-webui's main user interface"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1563" data-mc-height="840" src="IMG/ooba-main-screen_thumb_0_0.png" style="width: auto;height: auto;" alt="Picture of text-generation-webui's main user interface" tabindex="" /></a>
-                                                            </p>
-                                                            <ol>
-                                                                <li value="1"><b>Main toolbar</b>: contains various tabs - most importantly <b>Chat, <a href="../D_Model_configuration/Generation_parameters.htm">Parameters</a> </b>and<b> <a href="../D_Model_configuration/Loading_model.htm">Model</a></b></li>
-                                                                <li value="2"><b>Past chats</b>: allows you to create a new chat, as well as browse through past chats</li>
-                                                                <li value="3"><b>Mode selector</b>: defines the formatting of the chat prompt, depending on the used model</li>
-                                                                <li value="4"><b>Chat interface</b>: this is where your chat with the AI&#160;assistant will appear</li>
-                                                                <li value="5"><b>Input area</b>: contains the input field, as well as some extra options accessible via the hamburger menu</li>
-                                                            </ol>
-                                                            <div class="next">Proceed to <a href="../C_Selecting_a_Model/Selecting_a_model.htm">picking a Large Language Model.</a></div>
+                                                            <h1>Model formats</h1>
+                                                            <div class="tip">
+                                                                <p>Tip:</p>
+                                                                <p>Refer to the <a href="../B_Getting_Started/System_requirements.htm">system requirements</a> section and decide on which method of loading the model you wish to use, if you haven't done so already.</p>
+                                                            </div>
+                                                            <div class="next">If you don't want to learn about the technical details of local LLMs and wish to skip to downloading and loading a model, feel free to skip ahead to a <a href="Recommended_first_models.htm">list of recommended models.</a></div>
+                                                            <div>
+                                                                <p>Machine learning is a dynamic field, and there are many standards and quantization formats, both current and already obsolete. For the sake of this guide, we will consider two of them - EXL2 and GGUF.</p>
+                                                            </div>
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />GGUF&#160;- Click here if you wish to load a model in both RAM and VRAM, or RAM only</a></span>
+                                                                <div class="MCDropDownBody dropDownBody">
+                                                                    <p><b>GGUF</b>&#160;is a popular file format used by one of the most popular backend libraries, <a href="https://github.com/ggerganov/llama.cpp" target="_blank">llama.cpp</a>. Models quantized using this format are capable of being loaded in RAM. Part of the model can also be offloaded to VRAM for extra overall speed. Thanks to this, GGUF&#160;remains one of the most popular model formats in use today. Models quantized in this format are usually denoted with a -GGUF&#160;suffix on huggingface.co:</p>
+                                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="IMG/HF_GGUF_example.png" data-mc-popup-alt="Image showing an example of a GGUF model"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="527" data-mc-height="74" src="IMG/HF_GGUF_example_thumb_0_0.png" style="width: auto;height: auto;" alt="Image showing an example of a GGUF model" tabindex="" /></a>
+                                                                    </p>
+                                                                    <p>You may also use the filter function limit the displayed models to only this format:</p>
+                                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="IMG/HF_GGUF_search.png" data-mc-popup-alt="Image showing the position of the filter bar on HuggingFace"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="985" data-mc-height="296" src="IMG/HF_GGUF_search_thumb_0_0.png" style="width: auto;height: auto;" alt="Image showing the position of the filter bar on HuggingFace" tabindex="" /></a>
+                                                                    </p>
+                                                                    <p>Browse through the available models and try to find one that suits your needs, taking into account the amount of memory you will need to load the model. <i>TheBloke</i> and <i>bartowski</i> are two HuggingFace users who consistently upload GGUF&#160;quants of popular models.</p>
+                                                                    <div class="tip">
+                                                                        <p>Tip:</p>
+                                                                        <p>Remember, you can start with a small, 7B model and upgrade to a larger one if it turns out your computer can handle it. Refer to the memory requirements table provided by most GGUF quant uploaders.</p>
+                                                                        <p>Keep in mind that quants below Q5 are generally not recommended. Try to pick a Q5_K_M quant to achieve the best size/quality ratio.</p>
+                                                                    </div>
+                                                                    <p>Once you've picked a model and the associated quant size, from the <b>model card</b> navigate to <b>Files and versions</b>, then simply click on the quant you wish to download. Once the download is finished, move the .gguf file to your text-generation-webui directory, dropping it in the <b>models</b> folder.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />EXL2 - Click here if you wish to load a model in VRAM only</a></span>
+                                                                <div class="MCDropDownBody dropDownBody">
+                                                                    <div>
+                                                                        <p><b>EXL2 </b> is a quantization format oriented towards GPU&#160;inference, using the <a href="https://github.com/turboderp/exllama" target="_blank">Exllama</a> backend. It offers the fastest inference speed, at the cost of not being able to offload any part of the model to system memory. Models quantized in this format are usually denoted with a -exl2&#160;suffix on huggingface.co:</p>
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="IMG/HF_EXL2_example.png" data-mc-popup-alt="Image showing an example of an exl2 quant"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="530" data-mc-height="73" src="IMG/HF_EXL2_example_thumb_0_0.png" style="width: auto;height: auto;" alt="Image showing an example of an exl2 quant" tabindex="" /></a>
+                                                                        </p>
+                                                                        <p>You may also use the filter function limit the displayed models to only this format:</p>
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="IMG/HF_EXL2_search.png" data-mc-popup-alt="image showing an example EXL2 search on HuggingFace"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="997" data-mc-height="302" src="IMG/HF_EXL2_search_thumb_0_0.png" style="width: auto;height: auto;" alt="image showing an example EXL2 search on HuggingFace" tabindex="" /></a>
+                                                                        </p>
+                                                                        <p>Unlike GGUF, where a single model card can hold many quant sizes at once, EXL2 quants are uploaded in separate model entries. You will notice a <b>BPW</b> (bits per weight) number in the model name. This number represents the quantization strength - the higher, the less quantized the model. Typically, 4bpw is considered to be the sweet spot between size and quality.</p>
+                                                                        <div class="tip">
+                                                                            <p>Rough reference:</p>
+                                                                            <p>A 7B&#160;4BPW&#160;model with 8k context size and FP8 cache enabled will take up around 4.7GB&#160;of VRAM. At 3.5 BPW, this number drops to 4.2GB. </p>
+                                                                            <p>A&#160;13B&#160;4BPW model with 8k context size will take around 10.5GB&#160;VRAM. At 3.5BPW, with FP8 cache enabled, this drops to 9.6GB VRAM. </p>
+                                                                            <p>Remember to leave extra memory available for your operating system!</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <p>To download an EXL2 model, you need to open text-generation-webui and navigate to the <b>models</b>tab.&#160;On the right side you will notice the <b>download</b> section. Find your desired model card and copy its  URL into the empty field below like so:</p>
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="IMG/webui_download_box.png" data-mc-popup-alt="Image of the download box in text-generation-webui"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="929" data-mc-height="305" src="IMG/webui_download_box_thumb_0_0.png" style="width: auto;height: auto;" alt="Image of the download box in text-generation-webui" tabindex="" /></a>
+                                                                        </p>
+                                                                        <p>Then, confirm with <b>'Download'</b>.&#160;The model will be automatically downloaded. You can monitor the progress in the terminal window:</p>
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="IMG/webui_download.png" data-mc-popup-alt="Image of a download in progress in text-generation-webui"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="979" data-mc-height="512" src="IMG/webui_download_thumb_0_0.png" style="width: auto;height: auto;" alt="Image of a download in progress in text-generation-webui" tabindex="" /></a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="next">Once you've selected and downloaded a model, proceed to <a href="../D_Model_configuration/Model_configuration.htm">model loading and configuration</a></div>
+                                                            <div class="next">If you still can't decide, try out one of the <a href="Recommended_first_models.htm">recommended models</a></div>
                                                         </div>
                                                     </div>
                                                 </div>
