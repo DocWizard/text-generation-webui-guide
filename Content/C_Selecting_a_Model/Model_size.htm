@@ -3,7 +3,25 @@
     <head>
     </head>
     <body>
-        <h1>Model size vs hardware capabilities</h1>
-        <p>Delete this text and replace it with your own content.</p>
+        <h1>First model - size vs hardware capabilities</h1>
+        <p>TODO: dropdown with reminder of methods of inference.</p>
+        <div class="next">If you don't want to learn about LLMs and just want to skip to downloading and installing a recommended model, feel free to skip ahead.</div>
+        <p style="font-weight: normal;">To get started with selecting your first model, open huggingface.co in your browser, and navigate to <b>Models</b> &gt;&#160;<b>Natural Language Processing</b> &gt;&#160;<b>Text Generation</b>. Alternatively, simply follow this <a href="https://huggingface.co/models?pipeline_tag=text-generation&amp;sort=trending">LINK</a>.</p>
+        <p style="font-weight: normal;">You will see a long list of currently available models. While browsing through, notice that most of their names contain a number followed by the letter B. This denotes the number of billions of parameters contained by the given model. For instance, <b>Llama-2-70b-chat</b> was trained on 70 billion parameters. </p>
+        <p style="font-weight: normal;">
+            <img src="IMG/HF_Models_Size.png" alt="Image showing examples of models on huggingface.co" style="width: auto;height: auto;" class="thumbnail" /> 
+        </p>
+        <p>There are also models named 8x7B - these are Mixture of Experts models - in essence, 8 smaller models working in conjunction.</p>
+        <p>To put things simply - the larger this number, the 'smarter' the model will be. However, larger models, while smart, have a significant downside - using them will require a powerful computer. <b>The bigger the number, the bigger the memory requirement.</b> You can very roughly assume that one billion of parameters will fit into slightly more than 1GB&#160;of RAM or VRAM. Remember that you will need to leave some memory available for your operating system and the LLM's context.</p>
+        <p>Further complicating this calculation is the matter of <i>quants</i>. For simplicity's sake, just understand that the model can be compressed to more easily fit into your memory - however, it will be slightly less 'smart' than an uncompressed model.</p>
+        <p>Some model authors provide a handy table showing exactly how much memory you will need to comfortably run a given model. In this example, a Q8 quant of <i>codellama-70b</i> can fit in 76GB&#160;of RAM, but a Q5 quant will fit into 50GB&#160;of memory.</p>
+        <p>
+            <img src="IMG/HF_Quant_table.png" alt="Image showing an example quantification table" style="width:auto;height:auto;" class="thumbnail"/>
+        </p>
+        <div class="tip">
+            <p> Tip</p>
+            <p>It's generally agreed that it's better to run a larger model quantified, than to run a smaller but unquantified model. It's also agreed that it's best not to go below Q5 (GGUF format), or 3.5bpw (EXL2 format). More on formats in the next section.</p>
+        </div>
+        <div class="next">Proceed to learning about model formats.</div>
     </body>
 </html>
