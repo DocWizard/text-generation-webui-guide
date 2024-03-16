@@ -5,7 +5,7 @@
     <body>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot>How to check how much VRAM you have</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot>How to check how much VRAM you have available</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>If you're not sure how much VRAM you have available, follow these steps:</p>

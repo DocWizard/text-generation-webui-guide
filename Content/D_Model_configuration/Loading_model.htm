@@ -4,6 +4,45 @@
     </head>
     <body>
         <h1>Loading the model</h1>
-        <p>Delete this text and replace it with your own content.</p>
+        <div class="tip">
+            <p>Tip:</p>
+            <p>Before following the steps in this section, remember to download a model and put it in the <b>models</b> folder in your text-generation-webui installation directory.</p>
+        </div>
+        <p>Loading a model in text-generation-webui is simple. Launch the webui by double-clicking the <b>start_windows.bat</b> script in your main installation directory. If you're using a different operating system, run the corresponding file. Then, using your web browser, navigate to the URL&#160;shown in the text-generation-webui console window.</p>
+        <p>
+            <img src="../B_Getting_Started/IMG/ooba-console-ip.png" style="width: auto;height: auto;" alt="Image showing where to find the local URL in the console window" class="thumbnail" />
+        </p>
+        <p>From the main application menu, navigate to the <b>Model</b> tab in the menu bar at the top of your screen. This is the main interface for selecting and configuring the loading parameters of your model:</p>
+        <p>
+            <img src="IMG/ooba-model-menu.png" alt="Image showing the Model tab in text-generation-webui" style="width: auto; height: auto;" class="thumbnail" />
+        </p>
+        <ol>
+            <li><b>Model selection dropdown</b> - use this to select the model you wish to load. Use the buttons next to it to load and unload the model, and save your settings for later. The refresh button refreshes the list of models available - useful if you download a new model while text-generation-webui is already running.</li>
+            <li><b>Model loader selection dropdown</b> - while text-generation-webui chooses the best model loader for your model automatically, advanced users may wish to pick a different loader. </li>
+            <li><b>Loader settings</b> - loader-dependent settings for your selected model. </li>
+        </ol>
+        <p style="font-weight: normal;">The first step is to select your downloaded model from the dropdown at the top of the screen. <b>Don't load it just yet.</b> First, take a look at the settings below.</p>
+        <p>If you're following the guide and are using the GGUF format of models, text-generation-webui will choose the llama.cpp loader for you automatically. Before loading the model, you will need to configure the loader settings section.</p>
+        <p>First, decide on the <b>context length</b> for your model. This determines how many <i>tokens</i> the AI will be able to remember from your chat. For reference, assume that a token equals about 4 characters. If you're using the GGUF format, this will be set automatically for you. Otherwise, you should be able to find the maximum context length of your model in the model's card on huggingface.co. You may use a smaller context size if you encounter issues with running out of memory while loading the model.</p>
+        <p>Second, move on to <b>n-gpu-layers</b>. This option determines how many 'layers' of the model will be delegated to VRAM, or your graphics card. If you're loading a model purely in RAM, disregard this option. Otherwise, set it to 50 initially.&#160;You will come back to this option after loading the model for the first time.</p>
+        <p style="font-weight: normal;">Finally, find the <b>threads</b> option. You must set this to the number of threads your CPU&#160;has.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/CPU_THREADS.flsnp" />
+        <p>The other options may be helpful as well, but are dedicated to advanced users. If you're using an Nvidia RTX&#160;card, you may safely check the <b>tensorcores</b> checkbox for some extra performance. Otherwise, you are fine to leave the other options as they are for now.</p>
+        <div class="caution">
+            <p>Caution!</p>
+            <p>At this point when first loading a model, it is entirely possible that your computer might crash. If it happens, don't panic. Your You won't cause any damage to your system. Simply wait for it to restart.</p>
+            <p>A crash at this point would simply mean that you've accidentally overfilled the available memory in your system. Select a smaller model and try again.</p>
+        </div>
+        <p>Whenever ready, press the <b>Load</b> button. Open the console window and look through the output. If everything went well, you should see several important messages:</p>
+        <p>
+            <img src="IMG/ooba-terminal-loaded.png" alt="Image showing the terminal output of text-generation-webui after loading a model." style="width: auto; height: auto;" class="thumbnail" />
+        </p>
+        <p>At the very bottom of the terminal output you will see that the model was successfully loaded. If you're loading the model in RAM only, then you're good to go. You may open the Task Manager once more and, in the <b>Memory</b>&#160;tab, check how much RAM&#160;was filled by loading the model. Use the dropdown below if you don't remember how to navigate to this tab.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/CPU_RAM.flsnp" />
+        <p>If using VRAM&#160;or both VRAM+RAM to load a model, you will need to do one more step. </p>
+        <p>In the terminal output, find the line that says <b>"offloaded xx/yy layers to GPU"</b>. This is relevant to the <b>n-gpu-layers</b> option from before. Take note of this number.</p>
+        <p>Next, open Task Manager and navigate to the <b>Performance</b> tab. Open the GPU&#160;tab. Refer to the dropdown below if you need a refresher. Note your dedicated GPU&#160;memory usage. If it hasn't reached 100% - the model fits neatly in your VRAM, and you don't need to change any options. If it has reached 100%, you will need to change the <b>n-gpu-layers</b> option to approx. 2 less than the <b>layers</b> number you saw in the terminal output. Reload the model and try again until your GPU&#160;isn't overfilled anymore. Alternatively, try using a smaller model.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/GPU_RAM.flsnp" />
+        <div class="next">Congratulations on loading your first large language model! Proceed to <a href="Model_configuration.htm">setting the model instructions and generation parameters</a></div>
     </body>
 </html>

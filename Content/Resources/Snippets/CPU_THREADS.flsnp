@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to find out how many threads your computer has</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you're not sure how many threads your CPU has available, follow these steps:</p>
+                <ul>
+                    <li style="font-weight: normal;">Open the <b>Start menu</b></li>
+                    <li style="font-weight: normal;">Search for <b>Task Manager</b> and launch it</li>
+                    <li style="font-weight: normal;">Navigate to <b>Performance</b>, then select your <b>CPU</b></li>
+                    <li style="font-weight: normal;">Note the number located in the bottom right corner, under <b>Logical processors</b>. That number represents the amount of threads you have available.</li>
+                </ul>
+                <p style="font-weight: normal;">
+                    <img src="../../D_Model_configuration/IMG/taskmgr-threads.png" alt="Image of the CPU window in Task Manager" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>
