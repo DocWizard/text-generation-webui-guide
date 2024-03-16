@@ -5,20 +5,20 @@
     <body>
         <h1>Recommended first models</h1>
         <div>
-            <p>This section contains pre-selected, simple models for those who wish to try text-generation-webui with minimal research. You will also find the required model parameters and instruction templates.</p>
+            <p>This section contains pre-selected, simple models for those who wish to try text-generation-webui with minimal research.</p>
             <MadCap:snippetBlock src="../Resources/Snippets/SysReqReminder.flsnp" />
-            <p>For simplicity's sake, the models below will work with any combination of VRAM&#160;and RAM, or GPU&#160;memory and system memory.</p>
+            <p>The models below will work with any combination of VRAM&#160;and RAM, or GPU&#160;memory and system memory. The models are also all meant for general use - much like ChatGPT&#160;or other similar services.</p>
             <MadCap:snippetBlock src="../Resources/Snippets/CPU_RAM.flsnp" />
             <MadCap:snippetBlock src="../Resources/Snippets/GPU_RAM.flsnp" />
-            <p><b>For computers with less than 16GB&#160;of RAM and no VRAM:</b>
+            <p><b>For computers with at least 8GB of RAM, RAM+VRAM or VRAM:</b>
             </p>
-            <p>You might not be able to use any sensible models at all at a bearable speed, but try a Q4_K_M quant of <a href="https://huggingface.co/TheBloke/stablelm-zephyr-3b-GGUF/blob/main/stablelm-zephyr-3b.Q4_K_M.gguf" target="_blank">TheBloke/stablelm-zephyr-3b-GGUF</a></p>
+            <p>You can comfortably run a q5_K_M quant of <a href="https://huggingface.co/Crataco/Nous-Hermes-2-Mistral-7B-DPO-imatrix-GGUF" target="_blank">Crataco/Nous-Hermes-2-Mistral-7B-DPO-imatrix-GGUF.</a> The chat format for this model is ChatML.</p>
             <p><b>For computers with 16GB&#160;or more of RAM, RAM+VRAM or VRAM:</b>
             </p>
-            <p>Try a Q5_K_M quant of <a href="https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/blob/main/mistral-7b-instruct-v0.1.Q5_K_M.gguf" target="_blank">TheBloke/Mistral-7B-Instruct-v0.1-GGUF</a></p>
+            <p>You can comfortably run a q5_K_M quant of <a href="https://huggingface.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF" target="_blank">TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF.</a> The chat format for this model is ChatML.</p>
             <p><b>For computers with at least 32 GB&#160;of RAM, RAM+VRAM or VRAM:</b>
             </p>
-            <p>Try a Q5_K_M quant of <a href="https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/blob/main/llama-2-13b-chat.Q5_K_M.gguf" target="_blank">TheBloke/Llama-2-13B-chat-GGUF.</a> Depending on your system, you might be able to run a more powerful model.</p>
+            <p>You can run a q4_K_S or K_M&#160;quant of <a href="https://huggingface.co/mradermacher/Nous-Hermes-2-Mixtral-8x7B-DPO-i1-GGUF" target="_blank">mradermacher/Nous-Hermes-2-Mixtral-8x7B-DPO-i1-GGUF.</a> The chat format for this model is ChatML.</p>
             <p>Once you've picked a model and the associated quant size, from the <b>model card</b> navigate to <b>Files and versions</b>, then simply click on the quant you wish to download. Once the download is finished, move the .gguf file to your text-generation-webui directory, dropping it in the <b>models</b> folder.</p>
             <p>
                 <div class="next">When ready, proceed to <a href="../D_Model_configuration/Model_configuration.htm">model loading and configuration</a></div>
