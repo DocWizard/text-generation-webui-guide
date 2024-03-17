@@ -62,5 +62,15 @@
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/E_Chatting/Characters.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/E_Chatting/API.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/F_Further_reading/Further_Reading.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/F_Further_reading/Alternative_software.htm" />
   </TocEntry>
 </CatapultToc>
