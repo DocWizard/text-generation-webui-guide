@@ -43,6 +43,6 @@
         <p>In the terminal output, find the line that says <b>"offloaded xx/yy layers to GPU"</b>. This is relevant to the <b>n-gpu-layers</b> option from before. Take note of this number.</p>
         <p>Next, open Task Manager and navigate to the <b>Performance</b> tab. Open the GPU&#160;tab. Refer to the dropdown below if you need a refresher. Note your dedicated GPU&#160;memory usage. If it hasn't reached 100% - the model fits neatly in your VRAM, and you don't need to change any options. If it has reached 100%, you will need to change the <b>n-gpu-layers</b> option to approx. 2 less than the <b>layers</b> number you saw in the terminal output. Reload the model and try again until your GPU&#160;isn't overfilled anymore. Alternatively, try using a smaller model.</p>
         <MadCap:snippetBlock src="../Resources/Snippets/GPU_RAM.flsnp" />
-        <div class="next">Congratulations on loading your first large language model! Proceed to <a href="Model_configuration.htm">setting the model instructions and generation parameters</a></div>
+        <div class="next">Congratulations on loading your first large language model! Proceed to <a href="Model_parameters.htm">setting the model instructions and generation parameters</a></div>
     </body>
 </html>
