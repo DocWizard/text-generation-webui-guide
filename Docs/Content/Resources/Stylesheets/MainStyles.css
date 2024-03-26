@@ -330,11 +330,14 @@ div.home-master-page-footer > div
 	float: left;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 div.home-master-page-footer > div:nth-child(1)
 {
 	width: 100%;
+	margin-left: 0%;
 }
 
 legend
@@ -463,15 +466,18 @@ div.caution
 
 div.caution::before
 {
-	content: url('../Images/Assets/Icons/exclamation-mark.png');
-	margin: 10px 0.5em 0px 0px;
-	float: left;
+	font: var(--fa-font-regular);
+	content: "\f256";
+	color: red;
+	padding-right: 0.3em;
+	font-size: 1.2em;
 }
 
 div.caution p:first-of-type
 {
 	font-weight: bold;
-	padding-left: 1em;
+	display: inline-block;
+	margin-bottom: 0;
 }
 
 p.footer-text
@@ -496,15 +502,18 @@ div.tip
 
 div.tip::before
 {
-	content: url('../Images/Assets/Icons/light-bulb.png');
-	margin: 10px 0.5em 0px 0px;
-	float: left;
+	font: var(--fa-font-regular);
+	content: "\f0eb";
+	color: #00ff00;
+	padding-right: 0.3em;
+	font-size: 1.2em;
 }
 
 div.tip p:first-of-type
 {
 	font-weight: bold;
-	padding-left: 1em;
+	display: inline-block;
+	margin-bottom: 0;
 }
 
 div.next
@@ -514,10 +523,25 @@ div.next
 	margin: 1em 0;
 }
 
+div.nextmain
+{
+	margin: 1em 25px;
+}
+
 div.next::before
 {
-	content: url('../Images/Assets/Icons/Arrows/arrow-right-black.png');
+	font-family: "Font Awesome 5 Free";
+	content: "\f105";
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 900;
 	padding: 0 1em 0 0;
+	float: left;
+}
+
+div.next:hover
+{
+	background-color: #f0f1ff;
 }
 
 MadCap|codeSnippetCopyButton
