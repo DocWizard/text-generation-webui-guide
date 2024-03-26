@@ -6,6 +6,8 @@
         <meta name="author" content="" /><title></title>
         <script src="../JS/link-events.js">
         </script>
+        <script src="https://kit.fontawesome.com/047e92a0d0.js" crossorigin="anonymous">
+        </script>
     </head>
     <body>
         <div class="topic-hero">
@@ -20,23 +22,8 @@
                     <div class="footer center">
                         <div class="home-master-page-footer">
                             <div>
-                                <table style="width: 100%;">
-                                    <col />
-                                    <col />
-                                    <col />
-                                    <tbody>
-                                        <tr>
-                                            <td><p class="footer-text">By DocWizard @ GitHub. Contact me:</p></td>
-                                            <td><a href="https://github.com/DocWizard" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/github-mark.png" /></a>
-                                            </td>
-                                            <td>
-                                                <p><a class="email" href="mailto:docwizard"><img src="../Images/Assets/Icons/MainIcons/Contact-black.png" /></a>
-                                                </p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                                <p>By DocWizard @ GitHub</p>
+								<p>Contact me: <a href="https://github.com/DocWizard" target="_blank"><i class="fa-brands fa-github fa-2x fa-border" style=" vertical-align: middle; color:black;"></i></a><a class="email" href="mailto:docwizard@tuta.com"><i class="fa-solid fa-envelope fa-2x fa-border" style=" vertical-align: middle; color:black;"></i></a></p></div>
                         </div>
                     </div>
                 </div>
