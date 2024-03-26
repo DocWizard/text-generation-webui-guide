@@ -23,7 +23,8 @@
                         <div class="home-master-page-footer">
                             <div>
                                 <p>By DocWizard @ GitHub</p>
-								<p>Contact me: <a href="https://github.com/DocWizard" target="_blank"><i class="fa-brands fa-github fa-2x fa-border" style=" vertical-align: middle; color:black;"></i></a><a class="email" href="mailto:docwizard@tuta.com"><i class="fa-solid fa-envelope fa-2x fa-border" style=" vertical-align: middle; color:black;"></i></a></p></div>
+                                <p>Contact me: <a href="https://github.com/DocWizard" target="_blank"><i class="fa-brands fa-github fa-2x fa-border" style=" vertical-align: middle; color:black;"></i></a><a class="email" href="mailto:docwizard@tuta.com"><i class="fa-solid fa-envelope fa-2x fa-border" style=" vertical-align: middle; color:black;"></i></a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
