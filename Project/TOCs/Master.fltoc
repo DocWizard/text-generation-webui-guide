@@ -3,7 +3,8 @@
   Version="1">
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/A_LLM_Basics/LLM_Basics.htm">
+    Link="/Content/A_LLM_Basics/LLM_Basics.htm"
+    conditions="General.Audience B">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/A_LLM_Basics/What_is_an_LLM.htm" />
