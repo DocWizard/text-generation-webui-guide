@@ -520,7 +520,7 @@ div.next
 {
 	background-color: aliceblue;
 	padding: 8px;
-	margin: 1em 0;
+	margin: 1em 1em;
 }
 
 div.nextmain
@@ -551,5 +551,10 @@ MadCap|codeSnippetCopyButton
 	mc-label: ' ';
 	height: 25px;
 	width: 25px;
+}
+
+.dropDown
+{
+	border: solid 2px #f5f5f5;
 }
 
