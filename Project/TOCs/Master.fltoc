@@ -50,9 +50,6 @@
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/D_Model_configuration/Model_parameters.htm" />
-    <TocEntry
-      Title="[%=System.LinkedTitle%]"
-      Link="/Content/D_Model_configuration/Generation_parameters.htm" />
   </TocEntry>
   <TocEntry
     Title="[%=System.LinkedTitle%]"

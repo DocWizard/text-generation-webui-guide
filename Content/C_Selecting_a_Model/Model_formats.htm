@@ -4,11 +4,11 @@
     </head>
     <body>
         <h1>GGUF model format - downloading a model</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/SkipAhead.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/SysReqReminder.flsnp" />
         <div>
             <p>Machine learning is a dynamic field, and there are many standards and quantization formats, both current and already obsolete. For the sake of this guide, we will consider the most versatile of them - GGUF.</p>
         </div>
-        <MadCap:snippetBlock src="../Resources/Snippets/SysReqReminder.flsnp" />
-        <MadCap:snippetBlock src="../Resources/Snippets/SkipAhead.flsnp" />
         <div>
             <p><b>GGUF</b>&#160;is a popular file format used by one of the most popular backend libraries, <a href="https://github.com/ggerganov/llama.cpp" target="_blank">llama.cpp</a>. Models quantized using this format are capable of being loaded in RAM. Part of the model can also be offloaded to VRAM for extra overall speed. Thanks to this, GGUF&#160;remains one of the most popular model formats in use today. Models quantized in this format are usually denoted with a -GGUF&#160;suffix on huggingface.co:</p>
             <p>
