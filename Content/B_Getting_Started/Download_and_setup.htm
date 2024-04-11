@@ -8,7 +8,7 @@
         <p>Downloading text-generation-webui is best accomplished by cloning the repository. You will need to download and install <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> on your system. The process is straightforward and should only take a minute.</p>
         <div class="tip">
             <p>Tip:</p>
-            <p>If you are already familiar with Git, you may use it instead to clone the repository by yourself.</p>
+            <p>If you are already familiar with Git, you may use it instead to clone the repository manually.</p>
         </div>
         <p>Once you have <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> installed on your system, go ahead and launch it.</p>
         <p>Navigate to <b>File</b> &gt; <b>Clone repository</b>. In the <b>repository URL</b> field, enter the following URL:</p>
@@ -19,15 +19,23 @@
         <p>Next, in the field below, select the path you wish to use for your local installation of text-generation-webui.</p>
         <p>Finally, press <b>Clone</b>. You may close Github Desktop as soon as the operation is finished.</p>
         <h2 id="initial-setup">Initial setup</h2>
-        <p>Installing text-generation-webui is simple. Use your file explorer to navigate to the text-generation-webui instalation folder you previously selected.</p>
-        <p>Now, find and double-click on a file named <b>start_windows.bat</b> (or, if you're using Linux or MacOS, start_linux.sh or start_macos.sh, respectively). You will use the same file in the future to launch the program.</p>
+        <p>To install text-generation-webui, you can simply launch the provided installation script. Use your file explorer to navigate to the text-generation-webui instalation folder you selected in the previous step.</p>
+        <p>Now, find and double-click on a file named <b>start_windows.bat</b> (or, if you're using Linux or MacOS, <b>start_linux.sh</b> or <b>start_macos.sh</b>, respectively). You will use the same file in the future to launch the program.</p>
         <div class="caution">
             <p>Caution!</p>
             <p>This script will automatically download approximately 3GB of data to your computer. Be aware of this especially if you're on a metered connection.</p>
         </div>
-        <p>A terminal window will launch, downloading some required dependencies. At some point, you will be asked to select your GPU vendor. Choose the desired option, then confirm with ENTER. You may also choose to use your CPU&#160;only. Remember, though, that GPU&#160;inference is much faster and generally preferred.</p>
+        <p>A command prompt window will open, and some required dependencies will be downloaded for you. After this is done, you will be asked to select your GPU vendor. Choose one of these options, then confirm your choice with ENTER:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">'A': 'NVIDIA',
+'B': 'AMD (Linux/MacOS only. Requires ROCm SDK 5.6 on Linux)',
+'C': 'Apple M Series',
+'D': 'Intel Arc (IPEX)',
+'N': 'None (I want to run models in CPU mode)'</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p> You may choose to use your CPU&#160;only. Remember that GPU&#160;inference is much faster and generally preferred.</p>
         <MadCap:snippetBlock src="../Resources/Snippets/GPU_VENDOR.flsnp" />
-        <p>Next, follow the on-screen prompts. Be patient, as the script may take some time to complete. Don't worry if the installation seems to be stuck.</p>
+        <p>Keep following the on-screen prompts. Be patient, as the script may take some time to complete. Don't worry if the installation seems to be stuck.</p>
         <p><b>The installation process is complete once you see "Running on local URL: ..." in your terminal window.</b>
         </p>
         <p>At this point, do not close the terminal window. Instead, take note of the local URL displayed:</p>
