@@ -526,3 +526,8 @@ MadCap|codeSnippetCopyButton
 .dropDown {
 	border: solid 2px #f5f5f5;
 }
+
+.search-bar {
+	width: max(20%, 250px);
+	float: right;
+}

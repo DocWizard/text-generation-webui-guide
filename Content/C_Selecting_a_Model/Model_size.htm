@@ -3,7 +3,7 @@
     <head>
     </head>
     <body>
-        <h1>First model - size vs hardware capabilities</h1>
+        <h1>Model size vs hardware capabilities</h1>
         <MadCap:snippetBlock src="../Resources/Snippets/SkipAhead.flsnp" />
         <MadCap:snippetBlock src="../Resources/Snippets/SysReqReminder.flsnp" />
         <p>To get started with selecting your first model, open huggingface.co in your browser, and navigate to <b>Models</b> &gt;&#160;<b>Natural Language Processing</b> &gt;&#160;<b>Text Generation</b>.</p>
@@ -22,7 +22,7 @@
         </p>
         <div class="tip">
             <p> Tip</p>
-            <p>It's generally agreed that it's better to run a larger model quantized, than to run a smaller but unquantized model. It's also agreed that it's best not to go below Q5 (in GGUF format).</p>
+            <p>It's generally agreed that it's better to run a larger model quantized, than to run a smaller but unquantized model. It's also agreed that it's best not to go below Q5.</p>
         </div>
         <p>You can very roughly assume that one billion of parameters will fit, when quantized, into slightly more than 1GB&#160;of RAM or VRAM. Remember that you will need to leave some memory available for your operating system and the LLM's context. </p>
         <p>Using this information you should be able to roughly estimate how large of a model you can comfortably run on your machine. One sensible approach would be to begin with a small model, for instance a 7B or 13B one, and if it runs well, move up to larger ones. For now, browse through and see if anything catches your eye.</p>
