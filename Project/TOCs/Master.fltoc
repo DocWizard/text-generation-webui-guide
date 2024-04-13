@@ -32,7 +32,7 @@
       Title="[%=System.LinkedTitle%]"
       Link="/Content/C_Selecting_a_Model/Browsing_HF.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
-      Title="Model size vs hardware capabilities"
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/C_Selecting_a_Model/Model_size.htm" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"

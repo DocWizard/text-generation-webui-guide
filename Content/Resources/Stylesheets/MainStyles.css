@@ -289,7 +289,7 @@ div.content-container	/*Wraps the content on the masterpage and provides the whi
 {
 	margin-right: 0;
 	background-color: #FFF;
-	padding: 25px;
+	padding: 40px;
 	min-height: 70vh;
 }
 
@@ -530,4 +530,14 @@ MadCap|codeSnippetCopyButton
 .search-bar {
 	width: max(20%, 250px);
 	float: right;
+}
+
+.footP{
+	margin:0;
+	color: #959595;
+}
+
+ul.menu li > a.selected::after {
+  content: '<';
+  padding-left: 0.5em;
 }
