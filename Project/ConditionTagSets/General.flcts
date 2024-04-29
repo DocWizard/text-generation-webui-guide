@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultConditionTagSet>
   <ConditionTag
     Comment=""
@@ -6,6 +6,10 @@
     BackgroundColor="#90ee90" />
   <ConditionTag
     Comment=""
-    Name="Audience B"
+    Name="Web only"
     BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="Print only"
+    Comment="" />
 </CatapultConditionTagSet>

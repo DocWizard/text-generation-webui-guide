@@ -14,15 +14,15 @@
         <p>Generally speaking, the more powerful your computer, the stronger models you can run locally on your machine. There are three main methods of running local LLMs, and each depends on the amount of system memory you have:</p>
         <p><b>GPU inference:</b> The fastest and most preferred method is to load the model entirely into your VRAM, or your graphics card's memory. You will need a dedicated graphics card.</p>
         <p>The amount of VRAM you have available will determine the size of the model you can load. You should assume 8GB&#160;of VRAM&#160;to be the minimum, and 24GB&#160;VRAM to be optimal. </p>
-        <div class="tip">
+        <div class="tip" MadCap:conditions="General.Web only">
             <p>Did you know?</p>
             <p>You can install multiple graphics cards into your system to maximize the amount of VRAM available for AI-related tasks.</p>
         </div>
-        <MadCap:snippetBlock src="../Resources/Snippets/GPU_DEDICATED.flsnp" />
-        <MadCap:snippetBlock src="../Resources/Snippets/GPU_RAM.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/GPU_DEDICATED.flsnp" MadCap:conditions="General.Web only" />
+        <MadCap:snippetBlock src="../Resources/Snippets/GPU_RAM.flsnp" MadCap:conditions="General.Web only" />
         <p><b>GPU&#160;+&#160;CPU inference:</b> This method will use both your VRAM&#160;and RAM&#160;to load the model. Offloading parts of the model to your system memory will allow you to load larger models at a significant performance penalty. For this, you will sum up both your VRAM and RAM. You can assume that a minimum of 16GB memory in total will be necessary.</p>
-        <MadCap:snippetBlock src="../Resources/Snippets/CPU_RAM.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/CPU_RAM.flsnp" MadCap:conditions="General.Web only" />
         <p><b>CPU&#160;only inference:</b> This method uses your CPU&#160;and RAM for inference, and is the slowest by far, but also the cheapest method in terms of necessary hardware. Assume at least 16GB&#160;of RAM at a minimum.</p>
-        <div class="next">Once you've determined if your system is capable of running a local LLM, proceed to <a href="Download_and_setup.htm">download and setup text-generation-webui</a></div>
+        <div class="next" MadCap:conditions="General.Web only">Once you've determined if your system is capable of running a local LLM, proceed to <a href="Download_and_setup.htm">download and setup text-generation-webui</a></div>
     </body>
 </html>

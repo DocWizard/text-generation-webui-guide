@@ -541,3 +541,9 @@ ul.menu li > a.selected::after {
   content: '<';
   padding-left: 0.5em;
 }
+
+@media print{
+	body{
+		mc-hyphenate: never;
+	}
+}

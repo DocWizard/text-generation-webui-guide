@@ -4,8 +4,8 @@
     </head>
     <body>
         <h1>Model size vs hardware capabilities</h1>
-        <MadCap:snippetBlock src="../Resources/Snippets/SkipAhead.flsnp" />
-        <MadCap:snippetBlock src="../Resources/Snippets/SysReqReminder.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/SkipAhead.flsnp" MadCap:conditions="General.Web only" />
+        <MadCap:snippetBlock src="../Resources/Snippets/SysReqReminder.flsnp" MadCap:conditions="General.Web only" />
         <p>To get started with selecting your first model, open huggingface.co in your browser, and navigate to <b>Models</b> &gt;&#160;<b>Natural Language Processing</b> &gt;&#160;<b>Text Generation</b>.</p>
         <p>You will see a long list of currently available models. You may click on any given model to see a <b>model card</b>, or a brief overview of the model's features, terms of use (not all models are free to use commercially) and recommended <a href="../D_Model_configuration/Model_parameters.htm">template or settings.</a></p>
         <p>While browsing through, notice that most model names contain a number followed by the letter B. This denotes the number of billions of parameters contained by the given model. For instance, <b>Llama-2-70b-chat</b> was trained on 70 billion parameters. </p>
@@ -20,13 +20,13 @@
         <p>
             <img src="IMG/HF_Quant_table.png" alt="Image showing an example quantification table" style="width:auto;height:auto;" class="thumbnail" />
         </p>
-        <div class="tip">
+        <div class="tip" MadCap:conditions="General.Web only">
             <p> Tip</p>
             <p>It's generally agreed that it's better to run a larger model quantized, than to run a smaller but unquantized model. It's also agreed that it's best not to go below Q5.</p>
         </div>
         <p>You can very roughly assume that one billion of parameters will fit, when quantized, into slightly more than 1GB&#160;of RAM or VRAM. Remember that you will need to leave some memory available for your operating system and the LLM's context. </p>
         <p>Using this information you should be able to roughly estimate how large of a model you can comfortably run on your machine. One sensible approach would be to begin with a small model, for instance a 7B or 13B one, and if it runs well, move up to larger ones. For now, browse through and see if anything catches your eye.</p>
-        <div class="next">Proceed to learning about <a href="Model_formats.htm">model formats</a></div>
-        <div class="next">Alternatively, try out one of the <a href="Recommended_first_models.htm">recommended models</a></div>
+        <div class="next" MadCap:conditions="General.Web only">Proceed to learning about <a href="Model_formats.htm">model formats</a></div>
+        <div class="next" MadCap:conditions="General.Web only">Alternatively, try out one of the <a href="Recommended_first_models.htm">recommended models</a></div>
     </body>
 </html>

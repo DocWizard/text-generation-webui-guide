@@ -11,7 +11,7 @@
   MasterPage="/Content/Resources/MasterPages/OtherTopics.flmsp"
   ResultsPerPage="10"
   Skin="/Project/Skins/HTML5 - Top Navigation.flskn"
-  ConditionTagExpression="include[&quot;General.Audience A&quot;] exclude[&quot;General.Audience B&quot;] "
+  ConditionTagExpression="include[&quot;General.Audience A&quot; or &quot;General.Web only&quot;], exclude[&quot;General.Print only&quot;]"
   DefaultUrl="/Content/Home.htm"
   MasterStylesheet="/Content/Resources/Stylesheets/MainStyles.css"
   MasterStylesheetOverride="true"

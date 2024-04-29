@@ -5,7 +5,7 @@
   Host=""
   User="MyAccountId"
   Password=""
-  Directory="C:\GitHub\text-generation-webui-guide\Docs"
+  Directory="C:\Users\Maciej\Documents\GitHub\text-generation-webui-guide\Docs"
   Port=""
   ViewUrl="http://www.madcapsoftware.com/"
   Type="file"></CatapultDestination>

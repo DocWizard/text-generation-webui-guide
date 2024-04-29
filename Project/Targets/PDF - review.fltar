@@ -6,15 +6,25 @@
   Destinations=""
   ShowMadCapBacklink="true"
   GlossaryTermConversion="marked"
-  MasterToc="/Project/TOCs/Master.fltoc"
-  ConditionTagExpression="exclude[&quot;General.Audience B&quot;]">
+  MasterToc="/Project/TOCs/PDF_TOC.fltoc"
+  ConditionTagExpression="include[&quot;General.Print only&quot;], exclude[&quot;General.Web only&quot;]"
+  MasterStylesheet="/Content/Resources/Stylesheets/MainStyles.css"
+  MasterPageLayout="/Content/Resources/MasterPages/Chapter.flpgl">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
-    GenerateIndexProxy="true"
+    GenerateIndexProxy="false"
     GenerateGlossaryProxy="true"
-    OutputFormat="docx" />
+    OutputFormat="docx"
+    ExpandingTextConversion="remove-body"
+    PopupConversion="remove-body" />
   <PDF
     Tagged="true"
     TitleBar="DocumentTitle" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/GHP_Publish.fldes"
+      Publish="true"
+      IsResource="false" />
+  </Destinations>
 </CatapultTarget>

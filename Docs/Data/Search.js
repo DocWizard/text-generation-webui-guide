@@ -1,1 +1,1 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/A_LLM_Basics/LLM_Basics.htm'],s:['+'],p:[['+',1],['libraries',7],['to',10]]});
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/B_Getting_Started/Download_and_setup.htm'],s:['+'],p:[['+',1],['load',9],['under',10]]});
