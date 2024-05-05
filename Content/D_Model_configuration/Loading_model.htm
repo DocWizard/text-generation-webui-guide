@@ -24,8 +24,8 @@
         </ol>
         <p style="font-weight: normal;">The first step is to select your downloaded model from the dropdown at the top of the screen. <b>Don't load it just yet.</b> First, take a look at the settings below.</p>
         <p>If you're following the guide and are using the GGUF format of models, text-generation-webui will choose the llama.cpp loader for you automatically. Before loading the model, you will need to configure the loader settings section.</p>
-        <p>First, decide on the <b>context length</b> for your model. This determines how many <i>tokens</i> the AI will be able to remember from your chat. For reference, assume that a token equals about 4 characters. If you're using the GGUF format, this will be set automatically for you. Otherwise, you should be able to find the maximum context length of your model in the model's card on huggingface.co. You may use a smaller context size if you encounter issues with running out of memory while loading the model.</p>
-        <p>Second, move on to <b>n-gpu-layers</b>. This option determines how many 'layers' of the model will be delegated to VRAM, or your graphics card. If you're loading a model purely in RAM, disregard this option. Otherwise, set it to 50 initially.&#160;You will come back to this option after loading the model for the first time.</p>
+        <p>First, decide on the <b>context length</b> for your model. This determines how many <i>tokens</i> the AI will be able to remember from your chat. For reference, assume that a token equals about 4 characters. If you're using the GGUF format, this will be set automatically for you. Otherwise, you should be able to find the maximum context length of your model in the model's card on <a href="http://huggingface.co/" target="_blank">huggingface.co</a>. You may use a smaller context size if you encounter issues with running out of memory while loading the model.</p>
+        <p>Second, move on to <b>n-gpu-layers</b>. This option determines how many "layers" of the model will be delegated to VRAM, or your graphics card. If you're loading a model purely in RAM, disregard this option. Otherwise, set it to 50 initially.&#160;You will come back to this option after loading the model for the first time.</p>
         <p style="font-weight: normal;">Finally, find the <b>threads</b> option. Set this to the number of threads your CPU&#160;has.</p>
         <MadCap:snippetBlock src="../Resources/Snippets/CPU_THREADS.flsnp" MadCap:conditions="General.Web only" />
         <p>The other options may be helpful as well, but are dedicated to advanced users. If you're using an Nvidia RTX&#160;card, you may safely check the <b>tensorcores</b> checkbox for some extra performance. Otherwise, you are fine to leave the other options as they are for now.</p>
@@ -36,15 +36,15 @@
             <p>At this point when first loading a model, it is entirely possible that your computer might crash. If it happens, don't panic. You won't cause any damage to your system. Simply wait for it to restart.</p>
             <p>A crash at this point would simply mean that you've accidentally overfilled the available memory in your system. Select a smaller model and try again.</p>
         </div>
-        <p>Whenever ready, press the <b>Load</b> button. Open the console window and look through the output. If everything went well, you should see several important messages:</p>
+        <p>Whenever ready, press the <b>Load</b> button. Open the console window and look through the output. If everything goes well, you should see several important messages:</p>
         <p>
             <img src="IMG/ooba-terminal-loaded.png" alt="Image showing the terminal output of text-generation-webui after loading a model." style="width: auto; height: auto;" class="thumbnail" />
         </p>
-        <p>At the very bottom of the terminal output you will see that the model was successfully loaded. If you're loading the model in RAM only, then you're good to go. Feel free to skip the rest of this topic and move on to the next step. </p>
+        <p>At the very bottom of the terminal output, you will see that the model was successfully loaded. If you're loading the model in RAM only, then you're good to go. Feel free to skip the rest of this topic and move on to the next step. </p>
         <p><a name="Layers"></a>If using VRAM&#160;or both VRAM+RAM to load a model, you will need to do one extra step. </p>
         <p>In the terminal output, find the line that says <b>"offloaded xx/yy layers to GPU"</b>. This is relevant to the <b>n-gpu-layers</b> option from before. Take note of this number.</p>
         <p>Next, open Task Manager and navigate to the <b>Performance</b> tab. Open the GPU&#160;tab. Refer to the dropdown below if you need a refresher. Note your dedicated GPU&#160;memory usage. If it hasn't reached 100% - the model fits neatly in your VRAM, and you don't need to change any options. If it has reached 100%, you will need to change the <b>n-gpu-layers</b> option to approx. 2 less than the <b>layers</b> number you saw in the terminal output. Reload the model and try again until your GPU&#160;isn't overfilled anymore. Alternatively, try using a smaller model.</p>
         <MadCap:snippetBlock src="../Resources/Snippets/GPU_RAM.flsnp" MadCap:conditions="General.Web only" />
-        <div class="next" MadCap:conditions="General.Web only">Congratulations on loading your first large language model! Proceed to <a href="Model_parameters.htm">setting the model instructions and generation parameters</a></div>
+        <div class="next" MadCap:conditions="General.Web only">Congratulations on loading your first large language model! Proceed to <a href="Model_parameters.htm">set the model instructions and generation parameters</a></div>
     </body>
 </html>

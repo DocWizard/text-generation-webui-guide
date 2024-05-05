@@ -531,11 +531,11 @@ div.nextmain
 div.next::before
 {
 	font-family: "Font Awesome 5 Free";
-	content: "\f105";
+	content: "\f061";
 	display: inline-block;
 	vertical-align: middle;
 	font-weight: 900;
-	padding: 0 1em 0 0;
+	padding: 0 1em 0 0.5em;
 	float: left;
 }
 
