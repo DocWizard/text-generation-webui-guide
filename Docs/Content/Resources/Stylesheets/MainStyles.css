@@ -490,6 +490,11 @@ div.home-text
 	margin: 1em 3em;
 }
 
+h2.home-text
+{
+	margin: 0.5em 2.5em;
+}
+
 div.tip
 {
 	border-left: solid 2px #00ff00;
