@@ -9,7 +9,8 @@
   MasterToc="/Project/TOCs/PDF_TOC.fltoc"
   ConditionTagExpression="include[&quot;General.Print only&quot;], exclude[&quot;General.Web only&quot;]"
   MasterStylesheet="/Content/Resources/Stylesheets/MainStyles.css"
-  MasterPageLayout="/Content/Resources/MasterPages/Chapter.flpgl">
+  MasterPageLayout="/Content/Resources/MasterPages/Chapter.flpgl"
+  PatchHeadingLevels="true">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

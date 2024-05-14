@@ -9,12 +9,12 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>If you're not sure how much RAM&#160;you have available, follow these steps:</p>
-                <ul>
+                <ol>
                     <li style="font-weight: normal;">Open the <b>Start menu</b></li>
                     <li style="font-weight: normal;">Search for <b>Task Manager</b> and launch it</li>
-                    <li style="font-weight: normal;">Navigate to <b>Performance</b> &gt;&#160;<b>Memory</b></li>
+                    <li style="font-weight: normal;">Go to <b>Performance</b> &gt;&#160;<b>Memory</b></li>
                     <li style="font-weight: normal;">Note the number located in the top right corner. That's the amount of RAM&#160;you have available on your computer.</li>
-                </ul>
+                </ol>
                 <p style="font-weight: normal;">
                     <img src="IMG/RAM_identification.png" alt="Image example showing where to find the available system memory" />
                 </p>

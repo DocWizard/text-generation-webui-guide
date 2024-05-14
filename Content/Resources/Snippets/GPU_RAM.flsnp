@@ -12,7 +12,7 @@
                 <ul>
                     <li style="font-weight: normal;">Open the <b>Start menu</b></li>
                     <li style="font-weight: normal;">Search for <b>Task Manager</b> and launch it</li>
-                    <li style="font-weight: normal;">Navigate to <b>Performance</b>, then select your dedicated GPU - it will be either <b>GPU0</b> or <b>GPU1</b></li>
+                    <li style="font-weight: normal;">Go to <b>Performance</b>, then select your dedicated GPU - it will be either <b>GPU0</b> or <b>GPU1</b></li>
                     <li style="font-weight: normal;">Note the number located in the top right corner of the <b>Dedicated GPU&#160;memory usage</b> box. That number represents the amount of VRAM you have available. </li>
                 </ul>
                 <p style="font-weight: normal;">

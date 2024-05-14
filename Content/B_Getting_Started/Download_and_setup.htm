@@ -5,44 +5,69 @@
     </head>
     <body>
         <h1 id="download-and-first-time-setup">Download and first-time setup</h1>
-        <p>Downloading text-generation-webui is best accomplished by cloning the repository. You will need to download and install <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> on your system. The process is straightforward and should only take a minute.<MadCap:conditionalText MadCap:conditions="General.Print only"> If you are already familiar with Git, you may use it instead to clone the repository manually.</MadCap:conditionalText></p>
+        <p>To download text-generation-webui, you will need to download and install <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> on your system. The process is straightforward and should only take a minute.<MadCap:conditionalText MadCap:conditions="General.Print only"> If you are already familiar with Git, you can use it instead to clone the repository manually.</MadCap:conditionalText></p>
         <div class="tip" MadCap:conditions="General.Web only">
             <p>Tip:</p>
-            <p>If you are already familiar with Git, you may use it instead to clone the repository manually.</p>
+            <p>If you are already familiar with Git, you can use it instead to clone the repository manually.</p>
         </div>
-        <p>Once you have <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> installed on your system, go ahead and launch it.</p>
-        <p>Navigate to <b>File</b> &gt; <b>Clone repository</b>. In the <b>repository URL</b> field, enter the following URL:</p>
-        <MadCap:codeSnippet>
-            <codeSnippetCopyButton />
-            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">https://github.com/oobabooga/text-generation-webui</MadCap:codeSnippetBody>
-        </MadCap:codeSnippet>
-        <p>Next, in the field below, select the path you wish to use for your local installation of text-generation-webui.</p>
-        <p>Finally, press <b>Clone</b>. You may close Github Desktop as soon as the operation is finished.</p>
+        <p>When you have <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> installed on your system, go ahead and launch it.</p>
+        <ol>
+            <li>
+                <p>Go to <b>File</b> &gt; <b>Clone repository</b>.</p>
+            </li>
+            <li>
+                <p> In the <b>repository URL</b> field, enter the following URL:</p>
+                <MadCap:codeSnippet>
+                    <codeSnippetCopyButton />
+                    <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">https://github.com/oobabooga/text-generation-webui</MadCap:codeSnippetBody>
+                </MadCap:codeSnippet>
+            </li>
+            <li>
+                <p>In the <b>local path</b> field, select the path you wish to use for your local installation of text-generation-webui.</p>
+            </li>
+            <li>
+                <p>Finally, select <b>Clone</b>. You can close Github Desktop as soon as the operation is finished.</p>
+            </li>
+        </ol>
         <h2 id="initial-setup">Initial setup</h2>
-        <p>To install text-generation-webui, you can simply launch the provided installation script. Use your file explorer to navigate to the text-generation-webui installation folder you selected in the previous step.</p>
-        <p>Now, find and double-click on a file named <b>start_windows.bat</b> (or, if you're using Linux or MacOS, <b>start_linux.sh</b> or <b>start_macos.sh</b>, respectively). You will use the same file in the future to launch the program.</p>
-        <div class="caution" MadCap:conditions="General.Web only">
-            <p>Caution!</p>
-            <p>This script will automatically download approximately 3GB of data to your computer. Be aware of this especially if you're on a metered connection.</p>
-        </div>
-        <p>A command prompt window will open, and some required dependencies will be downloaded for you. Afterwards, you will be asked to select your GPU vendor. Choose one of these options, then confirm your choice with ENTER:</p>
-        <MadCap:codeSnippet>
-            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">'A': 'NVIDIA',
+        <p>To install text-generation-webui, you can simply launch the provided installation script. </p>
+        <ol>
+            <li>
+                <p>Using your file explorer, open the text-generation-webui installation folder you selected in the previous step.</p>
+            </li>
+            <li>
+                <p>Find and select <b>start_windows.bat</b> (or, if you're using Linux or MacOS, <b>start_linux.sh</b> or <b>start_macos.sh</b>, respectively). You will use the same file in the future to launch the program.</p>
+            </li>
+            <li>
+                <div class="caution" MadCap:conditions="General.Web only">
+                    <p>Caution!</p>
+                    <p>This script will automatically download approximately 3GB of data to your computer. Be aware of this especially if you're on a metered connection.</p>
+                </div>
+            </li>
+            <li>
+                <p>A command prompt window will open, and some required dependencies will be downloaded for you. Afterwards, you will be asked to select your GPU vendor. Choose one of these options, then confirm your choice with ENTER:</p>
+                <MadCap:codeSnippet>
+                    <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">'A': 'NVIDIA',
 'B': 'AMD (Linux/MacOS only. Requires ROCm SDK 5.6 on Linux)',
 'C': 'Apple M Series',
 'D': 'Intel Arc (IPEX)',
 'N': 'None (I want to run models in CPU mode)'</MadCap:codeSnippetBody>
-        </MadCap:codeSnippet>
-        <p> You may choose to use your CPU&#160;only. Remember that GPU&#160;inference is much faster and generally preferred.</p>
-        <MadCap:snippetBlock src="../Resources/Snippets/GPU_VENDOR.flsnp" MadCap:conditions="General.Web only" />
-        <p>Keep following the on-screen prompts. Be patient, as the script may take some time to complete. Don't worry if the installation seems to be stuck.</p>
-        <p><b>The installation process is complete once you see "Running on local URL: ..." in your terminal window.</b>
-        </p>
+                </MadCap:codeSnippet>
+                <MadCap:snippetBlock src="../Resources/Snippets/GPU_VENDOR.flsnp" MadCap:conditions="General.Web only" />
+            </li>
+            <li>
+                <p>Keep following the on-screen prompts. Be patient, as the script can take some time to complete. Don't worry if the installation seems to be stuck.</p>
+            </li>
+            <li>
+                <p><b>The installation process is complete once you see "Running on local URL: ..." in your terminal window.</b>
+                </p>
+            </li>
+        </ol>
         <p>At this point, do not close the terminal window. Instead, take note of the local URL displayed:</p>
         <p>
             <img src="IMG/ooba-console-ip.png" style="width: auto;height: auto;" alt="Image showing where to find the local URL in the console window" class="thumbnail" />
         </p>
-        <p> Using your web browser of choice, navigate to the given URL. You should see the main interface. Congratulations, you have successfully completed the installation process!</p>
+        <p>Enter this address into your web browser's address bar. You should see the program's main interface. Congratulations, you have successfully completed the installation process!</p>
         <div class="next" MadCap:conditions="General.Web only"><a href="UI_and_basic_functionality.htm">Proceed to an overview of the text-generation-webui interface</a>
         </div>
     </body>

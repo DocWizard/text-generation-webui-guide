@@ -7,12 +7,12 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>If you're not sure how many threads your CPU has available, follow these steps:</p>
-                <ul>
+                <ol>
                     <li style="font-weight: normal;">Open the <b>Start menu</b></li>
                     <li style="font-weight: normal;">Search for <b>Task Manager</b> and launch it</li>
-                    <li style="font-weight: normal;">Navigate to <b>Performance</b>, then select your <b>CPU</b></li>
+                    <li style="font-weight: normal;">Go to <b>Performance</b>, then select your <b>CPU</b></li>
                     <li style="font-weight: normal;">Note the number located in the bottom right corner, under <b>Logical processors</b>. That number represents the number of threads you have available.</li>
-                </ul>
+                </ol>
                 <p style="font-weight: normal;">
                     <img src="../../D_Model_configuration/IMG/taskmgr-threads.png" alt="Image of the CPU window in Task Manager" />
                 </p>

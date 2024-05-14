@@ -3,10 +3,26 @@
   Version="1">
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/Home.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+    Link="/Content/Title-print.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Print only"
+    BreakType="chapter"
+    PageType="title"
+    StartSection="false"
+    PageLayout="/Content/Resources/MasterPages/Chapter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumberReset="reset"
+    PageNumber="1"
+    AutoEndOnLeftPage="disabled"
+    ComputeToc="false"
+    ReplaceMergeNode="false" />
   <TocEntry
     Title="[%=System.LinkedTitle%]"
     Link="/Content/TOC-print.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Home.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
   <TocEntry
     Title="[%=System.LinkedTitle%]"
     Link="/Content/B_Getting_Started/Getting_Started.htm">
