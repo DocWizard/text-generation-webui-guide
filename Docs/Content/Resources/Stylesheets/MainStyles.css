@@ -103,6 +103,7 @@ img.thumbnail
 	mc-thumbnail: popup;
 	mc-thumbnail-max-height: auto;
 	margin: 1em 0;
+	border: 1px solid #F0F0F0;
 }
 
 a.MCBreadcrumbsLink
@@ -575,17 +576,42 @@ MadCap|codeSnippetCopyButton
 	color: #959595;
 }
 
-ul.menu li > a.selected::after
-{
-	content: '<';
-	padding-left: 0.5em;
-}
-
 @media print
 {
 	body
 	{
 		mc-hyphenate: never;
 	}
+}
+
+h1.title
+{
+	color: #78b1a9;
+	font-size: 48px;
+}
+
+p.title
+{
+	color: #78b1a9;
+}
+
+p.titlesmol
+{
+	color: white;
+}
+
+h2.title
+{
+	color: white;
+}
+
+h1.omit
+{
+	mc-heading-level: 0;
+}
+
+h2.omit
+{
+	mc-heading-level: 0;
 }
 

@@ -2,8 +2,9 @@
 <CatapultToc
   Version="1">
   <TocEntry
-    Title="[%=System.LinkedTitle%]"
-    Link="/Content/B_Getting_Started/Getting_Started.htm">
+    Title="Getting started"
+    Link="/Content/B_Getting_Started/Getting_Started.htm"
+    StartSection="false">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/B_Getting_Started/System_requirements.htm" />

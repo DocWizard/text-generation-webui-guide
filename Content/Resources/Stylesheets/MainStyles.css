@@ -1,4 +1,4 @@
-/*<meta />*/
+﻿/*<meta />*/
 
 /*===========================================================================================================================================================
 
@@ -101,6 +101,7 @@ img.thumbnail
 	mc-thumbnail: popup;
 	mc-thumbnail-max-height: auto;
 	margin: 1em 0;
+	border:1px solid #F0F0F0;
 }
 
 a.MCBreadcrumbsLink
@@ -543,12 +544,6 @@ MadCap|codeSnippetCopyButton
 	color: #959595;
 }
 
-ul.menu li > a.selected::after
-{
-	content: '<';
-	padding-left: 0.5em;
-}
-
 @media print
 {
 	body
@@ -587,4 +582,3 @@ h2.omit
 {
 	mc-heading-level: 0;
 }
-

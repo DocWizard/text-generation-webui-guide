@@ -9,13 +9,13 @@
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <p>If you're not sure if you have a dedicated or integrated graphics card, follow these steps:</p>
-                <ul>
+                <ol>
                     <li style="font-weight: normal;">Open the <b>Start Menu</b></li>
                     <li style="font-weight: normal;">Search for <b>Device Manager</b></li>
                     <li style="font-weight: normal;">Select <b>Display Adapters</b></li>
                     <li style="font-weight: normal;">If you see "Intel Integrated Graphics", you do not have a dedicated graphics card. If you see AMD or NVIDIA, you are good to go! If you see both, that means your computer has both dedicated and integrated graphics - which is also good for our purposes.</li>
                     <img src="IMG/GPU_dedicated.png" />
-                </ul>
+                </ol>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
     </body>

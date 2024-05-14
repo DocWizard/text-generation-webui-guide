@@ -129,7 +129,6 @@
                                         </div>
                                         <div class="topic-layout">
                                             <div>
-                                                <p class="side-title">RELATED&#160;TOPICS</p>
                                                 <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Master.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
                                                 </ul>
                                             </div>
@@ -146,58 +145,90 @@
                                                                 <p>Tip:</p>
                                                                 <p>Before following the steps in this section, remember to download a model and put it in the <b>models</b> folder in your text-generation-webui installation directory.</p>
                                                             </div>
-                                                            <p>Loading a model in text-generation-webui is simple. Launch the webui by double-clicking the <b>start_windows.bat</b> script in your main installation directory. If you're using a different operating system, run the corresponding file. Then, using your web browser, navigate to the URL&#160;shown in the text-generation-webui console window.</p>
-                                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../B_Getting_Started/IMG/ooba-console-ip.png" data-mc-popup-alt="Image showing where to find the local URL in the console window"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="979" data-mc-height="126" src="../B_Getting_Started/IMG/ooba-console-ip_thumb_0_0.png" style="width: auto;height: auto;" alt="Image showing where to find the local URL in the console window" tabindex="" /></a>
-                                                            </p>
-                                                            <p>From the main application menu, navigate to the <b>Model</b> tab in the menu bar at the top of your screen. This is the main interface for selecting and configuring the loading parameters of your model:</p>
+                                                            <h2> Preparing the program</h2>
+                                                            <ol>
+                                                                <li value="1">
+                                                                    <p> Launch the webui by double-clicking the <b>start_windows.bat</b> script in your main installation directory. If you're using a different operating system, run the corresponding file. </p>
+                                                                </li>
+                                                                <li value="2">
+                                                                    <p> Using your web browser, go to the URL&#160;provided in the text-generation-webui console window.</p>
+                                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../B_Getting_Started/IMG/ooba-console-ip.png" data-mc-popup-alt="Image showing where to find the local URL in the console window"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="979" data-mc-height="126" src="../B_Getting_Started/IMG/ooba-console-ip_thumb_0_0.png" style="width: auto;height: auto;" alt="Image showing where to find the local URL in the console window" tabindex="" /></a>
+                                                                    </p>
+                                                                </li>
+                                                                <li value="3">
+                                                                    <p>From the main application menu, go to the <b>Model</b> tab in the menu bar at the top of your screen. </p>
+                                                                </li>
+                                                            </ol>
+                                                            <p>This is the main interface for selecting and configuring the loading parameters of your model:</p>
                                                             <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="IMG/ooba-model-menu.png" data-mc-popup-alt="Image showing the Model tab in text-generation-webui"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1538" data-mc-height="834" src="IMG/ooba-model-menu_thumb_0_0.png" style="width: auto;height: auto;" alt="Image showing the Model tab in text-generation-webui" tabindex="" /></a>
                                                             </p>
                                                             <ol>
-                                                                <li value="1"><b>Model selection dropdown</b> - use this to select the model you wish to load. Use the buttons next to it to load and unload the model, and save your settings for later. The refresh button refreshes the list of models available - useful if you download a new model while text-generation-webui is already running.</li>
-                                                                <li value="2"><b>Model loader selection dropdown</b> - while text-generation-webui chooses the best model loader for your model automatically, advanced users may wish to pick a different loader. </li>
-                                                                <li value="3"><b>Loader settings</b> - loader-dependent settings for your selected model. </li>
+                                                                <li value="1"><b>Model selection dropdown</b> – use this to select the model you wish to load. Use the buttons next to it to load and unload the model, and save your settings for later. The refresh button refreshes the list of models available - useful if you download a new model while text-generation-webui is already running.</li>
+                                                                <li value="2"><b>Model loader selection dropdown</b> – while text-generation-webui chooses the best model loader for your model automatically, advanced users might wish to pick a different loader. </li>
+                                                                <li value="3"><b>Loader settings</b> – loader-dependent settings for your selected model. </li>
                                                             </ol>
+                                                            <h2>Loading the model</h2>
                                                             <p style="font-weight: normal;">The first step is to select your downloaded model from the dropdown at the top of the screen. <b>Don't load it just yet.</b> First, take a look at the settings below.</p>
-                                                            <p>If you're following the guide and are using the GGUF format of models, text-generation-webui will choose the llama.cpp loader for you automatically. Before loading the model, you will need to configure the loader settings section.</p>
-                                                            <p>First, decide on the <b>context length</b> for your model. This determines how many <i>tokens</i> the AI will be able to remember from your chat. For reference, assume that a token equals about 4 characters. If you're using the GGUF format, this will be set automatically for you. Otherwise, you should be able to find the maximum context length of your model in the model's card on <a href="http://huggingface.co/" target="_blank">huggingface.co</a>. You may use a smaller context size if you encounter issues with running out of memory while loading the model.</p>
-                                                            <p>Second, move on to <b>n-gpu-layers</b>. This option determines how many "layers" of the model will be delegated to VRAM, or your graphics card. If you're loading a model purely in RAM, disregard this option. Otherwise, set it to 50 initially.&#160;You will come back to this option after loading the model for the first time.</p>
-                                                            <p style="font-weight: normal;">Finally, find the <b>threads</b> option. Set this to the number of threads your CPU&#160;has.</p>
+                                                            <p>If you're following the guide and are using the GGUF format of models, text-generation-webui will choose the llama.cpp loader for you automatically. Before loading the model, you will need to configure the loader settings section:</p>
+                                                            <ol>
+                                                                <li value="1">
+                                                                    <p>Decide on the <b>context length</b> for your model. This determines how many <i>tokens</i> the AI will be able to remember from your chat. For reference, assume that a token equals about 4 characters. If you're using the GGUF format, this will be set automatically for you. Otherwise, you should be able to find the maximum context length of your model in the model's card on <a href="http://huggingface.co/" target="_blank">huggingface.co</a>. You can use a smaller context size if you encounter issues with running out of memory while loading the model.</p>
+                                                                </li>
+                                                                <li value="2">
+                                                                    <p>Move on to <b>n-gpu-layers</b>. This option determines how many "layers" of the model will be delegated to VRAM, or your graphics card. If you're loading a model purely in RAM, disregard this option. Otherwise, set it to 50 initially.&#160;You will come back to this option after loading the model for the first time.</p>
+                                                                </li>
+                                                                <li value="3">
+                                                                    <p style="font-weight: normal;">Finally, find the <b>threads</b> option. Set this to the number of threads your CPU&#160;has.</p>
+                                                                </li>
+                                                            </ol>
                                                             <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How to find out how many threads your computer has</a></span>
                                                                 <div class="MCDropDownBody dropDownBody">
                                                                     <p>If you're not sure how many threads your CPU has available, follow these steps:</p>
-                                                                    <ul>
-                                                                        <li style="font-weight: normal;">Open the <b>Start menu</b></li>
-                                                                        <li style="font-weight: normal;">Search for <b>Task Manager</b> and launch it</li>
-                                                                        <li style="font-weight: normal;">Navigate to <b>Performance</b>, then select your <b>CPU</b></li>
-                                                                        <li style="font-weight: normal;">Note the number located in the bottom right corner, under <b>Logical processors</b>. That number represents the number of threads you have available.</li>
-                                                                    </ul>
+                                                                    <ol>
+                                                                        <li style="font-weight: normal;" value="1">Open the <b>Start menu</b></li>
+                                                                        <li style="font-weight: normal;" value="2">Search for <b>Task Manager</b> and launch it</li>
+                                                                        <li style="font-weight: normal;" value="3">Go to <b>Performance</b>, then select your <b>CPU</b></li>
+                                                                        <li style="font-weight: normal;" value="4">Note the number located in the bottom right corner, under <b>Logical processors</b>. That number represents the number of threads you have available.</li>
+                                                                    </ol>
                                                                     <p style="font-weight: normal;">
                                                                         <img src="IMG/taskmgr-threads.png" alt="Image of the CPU window in Task Manager" />
                                                                     </p>
                                                                 </div>
                                                             </div>
-                                                            <p>The other options may be helpful as well, but are dedicated to advanced users. If you're using an Nvidia RTX&#160;card, you may safely check the <b>tensorcores</b> checkbox for some extra performance. Otherwise, you are fine to leave the other options as they are for now.</p>
+                                                            <p>The other options can be helpful as well, but are dedicated to advanced users. If you're using an Nvidia RTX&#160;card, you can safely check the <b>tensorcores</b> checkbox for some extra performance. Otherwise, you are fine to leave the other options as they are.</p>
                                                             <div class="caution" data-mc-conditions="General.Web only">
                                                                 <p>Caution!</p>
                                                                 <p>At this point when first loading a model, it is entirely possible that your computer might crash. If it happens, don't panic. You won't cause any damage to your system. Simply wait for it to restart.</p>
                                                                 <p>A crash at this point would simply mean that you've accidentally overfilled the available memory in your system. Select a smaller model and try again.</p>
                                                             </div>
-                                                            <p>Whenever ready, press the <b>Load</b> button. Open the console window and look through the output. If everything goes well, you should see several important messages:</p>
+                                                            <p>Whenever ready, select the <b>Load</b> button. Open the console window and look through the output. If everything goes well, you should see several important messages:</p>
                                                             <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="IMG/ooba-terminal-loaded.png" data-mc-popup-alt="Image showing the terminal output of text-generation-webui after loading a model."><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="979" data-mc-height="512" src="IMG/ooba-terminal-loaded_thumb_0_0.png" style="width: auto;height: auto;" alt="Image showing the terminal output of text-generation-webui after loading a model." tabindex="" /></a>
                                                             </p>
                                                             <p>At the very bottom of the terminal output, you will see that the model was successfully loaded. If you're loading the model in RAM only, then you're good to go. Feel free to skip the rest of this topic and move on to the next step. </p>
                                                             <p><a name="Layers"></a>If using VRAM&#160;or both VRAM+RAM to load a model, you will need to do one extra step. </p>
-                                                            <p>In the terminal output, find the line that says <b>"offloaded xx/yy layers to GPU"</b>. This is relevant to the <b>n-gpu-layers</b> option from before. Take note of this number.</p>
-                                                            <p>Next, open Task Manager and navigate to the <b>Performance</b> tab. Open the GPU&#160;tab. Refer to the dropdown below if you need a refresher. Note your dedicated GPU&#160;memory usage. If it hasn't reached 100% - the model fits neatly in your VRAM, and you don't need to change any options. If it has reached 100%, you will need to change the <b>n-gpu-layers</b> option to approx. 2 less than the <b>layers</b> number you saw in the terminal output. Reload the model and try again until your GPU&#160;isn't overfilled anymore. Alternatively, try using a smaller model.</p>
+                                                            <ol>
+                                                                <li value="1">
+                                                                    <p>In the terminal output, find the line that says <b>"offloaded xx/yy layers to GPU"</b>. This is relevant to the <b>n-gpu-layers</b> option from before. Take note of this number.</p>
+                                                                </li>
+                                                                <li value="2">
+                                                                    <p>Open Task Manager and go to the <b>Performance</b> tab. </p>
+                                                                </li>
+                                                                <li value="3">
+                                                                    <p>Open the <b>GPU</b>&#160;tab. </p>
+                                                                </li>
+                                                                <li value="4">
+                                                                    <p>Note your dedicated GPU&#160;memory usage. If it hasn't reached 100%, that means the model fits neatly in your VRAM, and you don't need to change any options. If it has reached 100%, you will need to lower the <b>n-gpu-layers</b> setting. Aim for a number slightly smaller than the number of layers you've noticed in the terminal output. Reload the model and try again until your GPU&#160;isn't overfilled anymore. Alternatively, try using a smaller model.</p>
+                                                                </li>
+                                                            </ol>
                                                             <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How to check how much VRAM you have available</a></span>
                                                                 <div class="MCDropDownBody dropDownBody">
                                                                     <p>If you're not sure how much VRAM you have available, follow these steps:</p>
-                                                                    <ul>
-                                                                        <li style="font-weight: normal;">Open the <b>Start menu</b></li>
-                                                                        <li style="font-weight: normal;">Search for <b>Task Manager</b> and launch it</li>
-                                                                        <li style="font-weight: normal;">Navigate to <b>Performance</b>, then select your dedicated GPU - it will be either <b>GPU0</b> or <b>GPU1</b></li>
-                                                                        <li style="font-weight: normal;">Note the number located in the top right corner of the <b>Dedicated GPU&#160;memory usage</b> box. That number represents the amount of VRAM you have available. </li>
-                                                                    </ul>
+                                                                    <ol>
+                                                                        <li style="font-weight: normal;" value="1">Open the <b>Start menu</b></li>
+                                                                        <li style="font-weight: normal;" value="2">Search for <b>Task Manager</b> and launch it</li>
+                                                                        <li style="font-weight: normal;" value="3">Go to <b>Performance</b>, then select your dedicated GPU - it will be either <b>GPU0</b> or <b>GPU1</b></li>
+                                                                        <li style="font-weight: normal;" value="4">Note the number located in the top right corner of the <b>Dedicated GPU&#160;memory usage</b> box. That number represents the amount of VRAM you have available. </li>
+                                                                    </ol>
                                                                     <p style="font-weight: normal;">
                                                                         <img src="../Resources/Snippets/IMG/GPU_identification.png" alt="Image of the GPU window in Task Manager" />
                                                                     </p>

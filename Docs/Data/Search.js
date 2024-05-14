@@ -1,1 +1,1 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/B_Getting_Started/Download_and_setup.htm'],s:['+'],p:[['+',1],['load',10],['understand',6]]});
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/B_Getting_Started/Download_and_setup.htm'],s:['+'],p:[['+',1],['loader',10],['usually',7]]});
