@@ -143,7 +143,7 @@
                                                             <h1>Model size vs hardware capabilities</h1>
                                                             <div class="next">If you don't want to learn about the technical details of local LLMs and wish to skip to downloading and loading a model, feel free to skip ahead to a <a href="Recommended_first_models.htm">list of recommended models.</a></div>
                                                             <div class="tip">
-                                                                <p>Tip:</p>
+                                                                <p style="font-weight: bold;">Tip:</p>
                                                                 <p>Refer to the <a href="../B_Getting_Started/System_requirements.htm">system requirements</a> section and decide on which method of loading the model you wish to use, if you haven't done so already.</p>
                                                             </div>
                                                             <p>To get started with selecting your first model, open <a href="http://huggingface.co/" target="_blank">huggingface.co</a> in your browser, and go to <b>Models</b> &gt;&#160;<b>Natural Language Processing</b> &gt;&#160;<b>Text Generation</b>.</p>
@@ -158,8 +158,8 @@
                                                             <p>Some model authors provide a table showing exactly how much memory you will need to comfortably run a given model. In this example, a Q8 quant of <i>codellama-70b</i> can fit in 76GB&#160;of RAM, but a Q5 quant will fit into 50GB&#160;of memory.</p>
                                                             <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="IMG/HF_Quant_table.png" data-mc-popup-alt="Image showing an example quantification table"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="729" data-mc-height="418" src="IMG/HF_Quant_table_thumb_0_0.png" style="width: auto;height: auto;" alt="Image showing an example quantification table" tabindex="" /></a>
                                                             </p>
-                                                            <div class="tip" data-mc-conditions="General.Web only">
-                                                                <p> Tip</p>
+                                                            <div class="tip">
+                                                                <p style="font-weight: bold;">Tip:</p>
                                                                 <p>It's generally agreed that it's better to run a larger model quantized than to run a smaller but unquantized model. It's also agreed that it's best not to go below Q5.</p>
                                                             </div>
                                                             <p>Using this information you should be able to roughly estimate how large a model you can comfortably run on your machine. One  approach would be to begin with a small model, a 7B or 13B one, and if it runs well, move up to larger ones.</p>

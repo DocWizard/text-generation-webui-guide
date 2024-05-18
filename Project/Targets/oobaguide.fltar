@@ -15,17 +15,21 @@
     CollapseMargins="true"
     GenerateTOCProxy="true"
     GenerateIndexProxy="false"
-    GenerateGlossaryProxy="true"
+    GenerateGlossaryProxy="false"
     OutputFormat="docx"
     ExpandingTextConversion="remove-body"
     PopupConversion="remove-body" />
   <PDF
     Tagged="true"
-    TitleBar="DocumentTitle" />
+    TitleBar="DocumentTitle"
+    ShowUsedBookmarks="false" />
   <Destinations>
     <Destination
       Link="/Project/Destinations/GHP_Publish.fldes"
       Publish="true"
       IsResource="false" />
   </Destinations>
+  <DocumentProperties
+    Author="DocWizard"
+    Title="Local LLM Guide" />
 </CatapultTarget>

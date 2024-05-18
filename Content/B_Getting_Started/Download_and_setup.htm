@@ -5,9 +5,9 @@
     </head>
     <body>
         <h1 id="download-and-first-time-setup">Download and first-time setup</h1>
-        <p>To download text-generation-webui, you will first need to download and install <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> on your system. The process is straightforward and should only take a minute.<MadCap:conditionalText MadCap:conditions="General.Print only"> If you are already familiar with Git, you can use it instead to clone the repository manually.</MadCap:conditionalText></p>
-        <div class="tip" MadCap:conditions="General.Web only">
-            <p>Tip:</p>
+        <p>To download text-generation-webui, you will first need to download and install <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> on your system. The process is straightforward and should only take a minute.</p>
+        <div class="tip">
+            <p style="font-weight: bold;">Tip:</p>
             <p>If you are already familiar with Git, you can use it instead to clone the repository manually.</p>
         </div>
         <p>When you have <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> installed on your system, go ahead and launch it.</p>
@@ -16,7 +16,7 @@
                 <p>Go to <b>File</b> &gt; <b>Clone repository</b>.</p>
             </li>
             <li>
-                <p> In the <b>repository URL</b> field, enter the following URL:</p>
+                <p>In the <b>repository URL</b> field, enter the following URL:</p>
                 <MadCap:codeSnippet>
                     <codeSnippetCopyButton />
                     <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">https://github.com/oobabooga/text-generation-webui</MadCap:codeSnippetBody>
@@ -37,11 +37,13 @@
             </li>
             <li>
                 <p>Find and select <b>start_windows.bat</b> (or, if you're using Linux or MacOS, <b>start_linux.sh</b> or <b>start_macos.sh</b>, respectively). You will use the same file in the future to launch the program.</p>
-                <div class="caution" MadCap:conditions="General.Web only">
-                    <p>Caution!</p>
-                    <p>This script will automatically download approximately 3GB of data to your computer. Be aware of this especially if you're on a metered connection.</p>
-                </div>
             </li>
+        </ol>
+        <div class="caution">
+            <p style="font-weight: bold;">Caution!</p>
+            <p>This script will automatically download approximately 3GB of data to your computer. Be aware of this especially if you're on a metered connection.</p>
+        </div>
+        <ol start="3">
             <li>
                 <p>A command prompt window will open, and some required dependencies will be downloaded for you. Afterwards, you will be asked to select your GPU vendor. Choose one of these options, then confirm your choice with ENTER:</p>
                 <MadCap:codeSnippet>

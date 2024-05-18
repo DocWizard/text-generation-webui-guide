@@ -5,7 +5,7 @@
     <body>
         <h1>GGUF model format - downloading a model</h1>
         <MadCap:snippetBlock src="../Resources/Snippets/SkipAhead.flsnp" MadCap:conditions="General.Web only" />
-        <MadCap:snippetBlock src="../Resources/Snippets/SysReqReminder.flsnp" MadCap:conditions="General.Web only" />
+        <MadCap:snippetBlock src="../Resources/Snippets/SysReqReminder.flsnp" />
         <div>
             <p>Machine learning is a dynamic field, and there are many standards and quantization formats, both current and already obsolete. For the sake of this guide, we will consider the most versatile of them: GGUF.</p>
         </div>
@@ -19,8 +19,8 @@
                 <img src="IMG/HF_GGUF_search.png" alt="Image showing the position of the filter bar on HuggingFace" style="width: auto;height: auto;" class="thumbnail" />
             </p>
             <p>Browse through the available models and find one that suits your needs. Take into account the amount of memory you will need to load the model.</p>
-            <div class="tip" MadCap:conditions="General.Web only">
-                <p>Tip:</p>
+            <div class="tip">
+                <p style="font-weight: bold;">Tip:                </p>
                 <p>Remember, you can start with a small, 7B model and upgrade to a larger one if it turns out your computer can handle it. Refer to the memory requirements table provided by most GGUF quant uploaders.</p>
                 <p>Keep in mind that quants below Q5 are generally not recommended. Try to pick a Q5_K_M quant to achieve the best size/quality ratio.</p>
             </div>

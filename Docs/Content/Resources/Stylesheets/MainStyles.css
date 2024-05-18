@@ -351,6 +351,24 @@ MadCap|codeSnippetCopyButton
 	
 }
 
+div.caution::before
+{
+	font: var(--fa-font-regular);
+	content: "\f256";
+	color: red;
+	padding-right: 0.3em;
+	font-size: 1.2em;
+}
+
+div.tip::before
+{
+	font: var(--fa-font-regular);
+	content: "\f0eb";
+	color: #00ff00;
+	padding-right: 0.3em;
+	font-size: 1.2em;
+}
+
 p.tip
 {
 	display: flex;
@@ -463,15 +481,7 @@ div.caution
 	margin-bottom: 16px;
 	margin-top: 16px;
 	padding: 6px 1em;
-}
-
-div.caution::before
-{
-	font: var(--fa-font-regular);
-	content: "\f256";
-	color: red;
-	padding-right: 0.3em;
-	font-size: 1.2em;
+	page-break-inside: avoid;
 }
 
 div.caution p:first-of-type
@@ -504,15 +514,28 @@ div.tip
 	margin-bottom: 16px;
 	margin-top: 16px;
 	padding: 6px 1em;
+	page-break-inside: avoid;
 }
 
-div.tip::before
+@media WebOutput
 {
-	font: var(--fa-font-regular);
-	content: "\f0eb";
-	color: #00ff00;
-	padding-right: 0.3em;
-	font-size: 1.2em;
+	div.tip::before
+	{
+		font: var(--fa-font-regular);
+		content: "\f0eb";
+		color: #00ff00;
+		padding-right: 0.3em;
+		font-size: 1.2em;
+	}
+
+	div.caution::before
+	{
+		font: var(--fa-font-regular);
+		content: "\f256";
+		color: red;
+		padding-right: 0.3em;
+		font-size: 1.2em;
+	}
 }
 
 div.tip p:first-of-type
